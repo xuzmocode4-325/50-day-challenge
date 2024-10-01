@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Expanding Cards{% endblock %}
+
+{% block styles%}
+    <style>
+        .peer.active ~ .peer {
+            display: none;
+        }
+    </style>
+{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content %}
+    <div id="container" class="flex flex-col sm:flex-row w-[100vw] sm:w-[90vw] gap-1 sm:gap-0 py-1">
+            {% include 'cards/includes/card-container.html' with text="The Mountain Sage" link="https://picsum.photos/seed/p/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="Dawn Hills" link="https://picsum.photos/seed/i/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="Sunrise Serenity" link="https://picsum.photos/seed/c/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="Snapping Dragon" link="https://picsum.photos/seed/s/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="A Skyline Citadel" link="https://picsum.photos/seed/u/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="Log On The Lake" link="https://picsum.photos/seed/m/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="Rising Horizons" link="https://picsum.photos/seed/y/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="In Plane Sight" link="https://picsum.photos/seed/r/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="From Under The Hood" link="https://picsum.photos/seed/d/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="Blades of Glory" link="https://picsum.photos/seed/o/1200/900" %}
+            {% include 'cards/includes/card-container.html' with text="Ocean Front" link="https://picsum.photos/seed/x/1200/900" %}
+    </div>
+{% endblock %}
+{% block script %}
+ <script src="{% static 'cards/js/panelActivator.js' %}"></script>
+{% endblock %}
+
+
+
+
+
+
+
