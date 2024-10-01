@@ -17,8 +17,9 @@
 		{% endblock %}
 	</head>
 
-	<body class="bg-gray-50 font-serif leading-normal tracking-normal">
-		<div class="container mx-auto"></div>
+
+	<body class="{% block custom_body_styles %}{% endblock %} leading-normal tracking-normal">
+		<div class="container mx-auto">
 			<section class="flex items-center justify-center min-h-screen">
 				<h1 class="text-5xl">{% block heading %} Project Starter {% endblock %}</h1>
 				{% block content%}

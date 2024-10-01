@@ -1,5 +1,5 @@
 """
-URL configuration for d1 project.
+URL configuration for frontendprojects project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('__reload__/', include('django_browser_reload.urls')),
     path('cards/', include('cards.urls')),
+    path('steps/', include('steps.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
