@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'cards',
     'steps',
     'theme',
+    'navigation',
     'tailwind',
     'django_browser_reload',
     'django.contrib.admin',

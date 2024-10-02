@@ -4,12 +4,45 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 @layer base {
     html {
         font-family: "Roboto", sans-serif;
     }
+
+    body {
+        @apply min-h-screen
+    }
+
+    h1 {
+        @apply text-4xl md:text-6xl
+    }
+    h2 {
+        @apply text-3xl md:text-5xl
+    }
+    h3 {
+        @apply text-2xl md:text-4xl
+    }
+    h4 {
+        @apply text-xl md:text-3xl
+    }
+    h5 {
+        @apply text-lg md:text-2xl
+    }
+    h6 {
+        @apply text-base md:text-xl 
+    }
+    
 } 
+
+@layer components {
+    .rotated {
+      @apply rotate-[-25deg] sm:rotate-[-20deg]
+    }
+
+
+}
 
 * {
     box-sizing: border-box;

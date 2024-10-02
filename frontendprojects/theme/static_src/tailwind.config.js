@@ -46,9 +46,18 @@ module.exports = {
             backgroundSize: {
                 'auto-100': 'auto 100%'
             },
+            rotate: {
+                '-65': '-65deg',
+            },
+            variants: {
+                extend: {
+                  rotate: ['peer-rotated'],
+                },
+            },
             fontFamily: {
                 roboto: ['Roboto', 'sans-serif'],
                 mulish: ['Mulish', 'sans-serif'],
+                lato: ['Lato', 'sans-serif'],
             },
         },
     },

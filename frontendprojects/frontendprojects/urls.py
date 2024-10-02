@@ -24,5 +24,6 @@ urlpatterns = [
     path('__reload__/', include('django_browser_reload.urls')),
     path('cards/', include('cards.urls')),
     path('steps/', include('steps.urls')),
+    path('navigation/', include('navigation.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

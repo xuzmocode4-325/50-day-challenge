@@ -1,0 +1,74 @@
+{% extends 'blog.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+
+{% block custom_body_styles %}font-lato overflow-x-hidden m-0 bg-slate-900{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block content%}
+<div id="container" class="bg-slate-200 w-screen min-h-screen p-10 group transition-transform duration-500 ease-linear origin-top-left">
+    <div id="circle_container" class="fixed -top-28 -left-28 ">
+        <div id="circle" class="
+            bg-green-500 rounded-full h-56 w-56 relative transition-transform duration-500 
+            ease-linear group-[.rotated]:rotate-[-65deg] sm:group-[.rotated]:rotate-[-70deg]">
+            <button id="close" class="cursor-pointer absolute focus:outline-0 rotate-90 origin-top-left text-zinc-50 top-[65%] left-[50%] h-28 bg-transparent border-none text-3xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <button id="open" class="cursor-pointer absolute transition-transform duration-500 focus:outline-0 text-zinc-50 top-[50%] left-[65%] h-28 bg-transparent border-none text-3xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <div id="article" class="mt-28 max-w-5xl mx-auto">
+        <h1 class="0">Very Motivation. Wow!</h1>
+        <h5 class="font-light italic">Xuzmonomi</h5>
+        <p class="my-4 leading-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquam numquam eligendi et recusandae maiores, 
+            eius tempora accusantium neque delectus, 
+            beatae exercitationem dolorum facilis, officiis cupiditate 
+            rerum nulla eveniet alias quidem similique ullam suscipit 
+            repellat consectetur. Dolorum mollitia molestias rerum autem, 
+            sit, adipisci nostrum dolor vero ratione inventore consequatur, 
+            dignissimos saepe placeat! Quasi laborum placeat maiores saepe quae. 
+            Consectetur, labore veritatis! Quisquam dolores dolor debitis quas itaque laborum, 
+            culpa, in cumque eum distinctio necessitatibus officiis veritatis beatae
+            vitae dicta voluptatum nulla corporis possimus ducimus ipsam expedita recusandae 
+            facilis ut dolore. Nobis voluptatum, itaque neque aliquam expedita necessitatibus
+            assumenda eum architecto omnis!
+        </p>
+        <h3>Much Mountain. Peak Performance.</h3>
+        <img src="https://picsum.photos/seed/picsum/1200/900" alt="" class="max-w-full rounded-md my-2">
+        <p class="my-4 leading-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laborum a sunt repellendus ad accusamus ex illo iure deleniti debitis? 
+            Animi provident veniam veritatis ex sit deserunt, similique voluptatum suscipit 
+            facere accusamus ab optio ullam perspiciatis est reiciendis impedit quam nemo sunt dolor saepe tenetur. 
+            Commodi nobis neque ipsam sequi labore minima! 
+            Iusto aperiam exercitationem atque illum sed quas animi quis quia consequatur, 
+            iste, numquam repellendus! Sunt accusantium officiis officia. 
+            Dolorum animi libero et unde nesciunt!
+        </p>
+    </div>
+</div>
+<!---translate-x-[100%]-->
+<!-- -->
+<nav class="peer-[.rotated]:translate-x-0 peer-[.rotated]:delay-300 fixed top-[calc(100vh-200px)] m-3 left-0 -z-10 group text-zinc-50 transition-transform duration-500 ease-in">
+    <ul class="pl-8 flex flex-col gap-4">
+        <li class="uppercase"><i class="pr-2 fas fa-home"></i>Home</li>
+        <li class="uppercase ml-3"><i class="pr-2 fas fa-user-alt"></i>About</li>
+        <li class="uppercase ml-6"><i class="pr-2 fa-solid fa-pen-nib"></i>Blog</li>
+        <li class="uppercase ml-12"><i class="pr-2 fas fa-envelope"></i>Contact</li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'navigation/js/menuToggle.js' %}"></script>
+{% endblock %}	
