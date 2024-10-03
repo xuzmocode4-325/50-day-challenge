@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Hidden Search{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %} bg-gradient-to-br from-indigo-950 to-slate-950 flex flex-col item-center justify-center overflow-hidden m-0{% endblock %}
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block content%}
+    <div id="search" class="relative h-12 group">
+        <input 
+            class="
+                focus:outline-none group-[.activated]:w-56 sm:group-[.activated]:w-64 text-slate-200
+                transition-all ease-linear duration-500
+                bg-transparent w-9 h-9 sm:w-12 sm:h-12 text-lg p-4 border-slate-400"
+            type="text" id="text" placeholder="Search..."
+        />
+        <button class="
+            focus:outline-none group-[.activated]:translate-y-12 group-[.activated]:translate-x-24
+            sm:group-[.activated]:translate-x-64 sm:group-[.activated]:translate-y-0
+            bg-slate-400 cursor-pointer text-2xl absolute top-0 left-0 
+            w-9 h-9 sm:h-12 sm:w-12 transition-all duration-500 ease-linear">
+            <i class="fas fa-search text text-slate-900"></i>
+        </button>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'search/js/searchActivator.js'%}"></script>
+{% endblock %}	

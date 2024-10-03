@@ -25,5 +25,6 @@ urlpatterns = [
     path('cards/', include('cards.urls')),
     path('steps/', include('steps.urls')),
     path('navigation/', include('navigation.urls')),
+    path('search/', include('search.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
