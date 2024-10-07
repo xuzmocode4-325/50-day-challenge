@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'steps',
     'theme',
     'search',
+    'blureffect',
     'navigation',
     'tailwind',
     'django_browser_reload',

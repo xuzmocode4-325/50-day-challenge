@@ -1,0 +1,8 @@
+asgiref @ file:///home/conda/feedstock_root/build_artifacts/asgiref_1711268871457/work
+Django @ file:///home/conda/feedstock_root/build_artifacts/django_1727685887191/work
+django-browser-reload==1.15.0
+django-tailwind==3.8.0
+setuptools==75.1.0
+sqlparse @ file:///home/conda/feedstock_root/build_artifacts/sqlparse_1721304206023/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+wheel==0.44.0

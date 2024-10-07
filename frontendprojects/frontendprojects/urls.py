@@ -26,5 +26,6 @@ urlpatterns = [
     path('steps/', include('steps.urls')),
     path('navigation/', include('navigation.urls')),
     path('search/', include('search.urls')),
+    path('blureffect/', include('blureffect.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

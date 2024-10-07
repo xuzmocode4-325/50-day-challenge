@@ -58,6 +58,7 @@ module.exports = {
                 roboto: ['Roboto', 'sans-serif'],
                 mulish: ['Mulish', 'sans-serif'],
                 lato: ['Lato', 'sans-serif'],
+                ubuntu: ['Ubuntu', 'sans-serif']
             },
         },
     },

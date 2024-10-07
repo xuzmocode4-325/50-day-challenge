@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %} {% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block alt_content%}
+    <section id="bg" class="
+        bg-cover bg-no-repeat bg-center absolute -top-8 -left-8  -z-10 blur-0 w-[calc(100vw+60px)] h-[calc(100vw+60px)]"
+        style="background-image: url('https://picsum.photos/seed/2100/1200');">
+    </section>
+    <div id="loading-text" class="text-center font-ubuntu text-5xl text-white">0%</div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'blureffect/js/blurModulator.js'%}"></script>
+{% endblock %}	
