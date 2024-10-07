@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'search',
     'blureffect',
     'navigation',
+    'scroll',
     'tailwind',
     'django_browser_reload',
     'django.contrib.admin',
