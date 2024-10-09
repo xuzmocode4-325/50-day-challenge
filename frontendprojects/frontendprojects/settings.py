@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'navigation',
     'scroll',
     'tailwind',
+    'split_landing',
     'django_browser_reload',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -1,0 +1,54 @@
+{% extends 'blog.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}h-screen{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div 
+        style="background-image: url('{% static 'split_landing/img/sony1.jpg' %}');"
+        class="bg-white hover:w-3/4 peer-hover:w-1/4 peer :before:content-[''] before:absolute 
+            before:w-full before:h-full before:bg-indigo-400/30 transition-all duration-500 group
+            bg-contain bg-center bg-no-repeat split w-1/2 h-full absolute overflow-hidden left-0">
+        <h1 class="absolute top-[5%] left-1/2 whitespace-nowrap -translate-x-1/2">Sony</h1>
+        <h4 class="p-4 absolute top-[17.5%] flex items-center justify-center text-center 
+            bg-slate-200/50 text-gray-800 group-hover:bg-black/60 group-hover:text-white
+            transition-all duration-700 group:peer-hover:hidden">
+            Major IV Portable Bluetooth On-Ear Headphone</h4>
+        <a href="#" 
+            class="btn absolute top-[85%] -translate-x-1/2 left-1/2 
+            flex items-center justify-center border-2 w-40 bg-indigo-500/50
+            hover:bg-indigo-600/70 text-white m-1 p-1 md:p-4 mix-blend-screen:p-4        
+            ">Buy Now
+        </a>
+    </div>
+    <div 
+        style="background-image: url('{% static 'split_landing/img/marshall1.jpg' %}');"
+        class="bg-white hover:w-3/4 hover:left-1/4 peer-hover:w-1/4: peer-hover:left-3/4 peer before:content-[''] 
+            before:absolute before:w-full before:h-full before:bg-blue-400/30 transition-all duration-500 group
+            bg-contain bg-center bg-no-repeat split w-1/2 h-full absolute overflow-hidden left-1/2">
+        <h1 class="absolute top-[5%] left-1/2 whitespace-nowrap -translate-x-1/2">Marshall</h1>
+        <h4 class="p-4 absolute top-[17.5%] flex items-center justify-center text-center 
+            bg-slate-200/50 text-gray-800 group-hover:bg-black/60 group-hover:text-white
+            transition-all duration-700 group:peer-hover:hidden">
+            Noise Cancelling Over-Ear Headphones</h4>
+        <a href="#" 
+            class="btn absolute top-[85%] -translate-x-1/2 left-1/2 
+            flex items-center justify-center border-2 w-40 bg-blue-500/50
+            hover:bg-blue-600/70 text-white m-1 p-1 md:p-4
+            ">Buy Now
+        </a>
+    </div>
+{% endblock %}
+
+{% block script %}
+ <script src="{% static 'split_landing/js/screenExpander.js' %}"></script>
+{% endblock %}	
