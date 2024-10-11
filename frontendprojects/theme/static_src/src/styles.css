@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 @layer base {
     html {
         font-family: "Roboto", sans-serif;
@@ -35,6 +36,18 @@
     h6 {
         @apply text-base md:text-xl 
     }
+
+    #past, #future, #today {
+        @apply text-gray-300 z-10
+    }
+
+    #today {
+        @apply rounded-full before:content-[""] 
+        before:w-9 before:h-9 before:absolute before:top-1/2
+        before:left-1/2 before:-translate-x-1/2 
+        before:-translate-y-1/2 before:bg-black 
+        before:rounded-full before:-z-10 text-gray-300
+    }
     
 } 
 
@@ -42,10 +55,5 @@
     .rotated {
       @apply rotate-[-25deg] sm:rotate-[-20deg]
     }
-
-
 }
 
-* {
-    box-sizing: border-box;
-}

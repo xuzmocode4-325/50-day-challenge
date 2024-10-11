@@ -29,5 +29,7 @@ urlpatterns = [
     path('blureffect/', include('blureffect.urls')),
     path('scroll/', include('scroll.urls')),
     path('split/', include('split_landing.urls')),
+    path('waveform/', include('waveform.urls')),
+    path('calendar/', include('calendar.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

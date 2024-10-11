@@ -1,0 +1,54 @@
+{% extends 'blog.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<div class="mx-44 my-8">
+    <h2 class="mb-4 mx-auto">Calendar</h2>
+    <div id="calender" class="m-auto w-96 bg-slate-500 p-4 rounded-lg shadow-sm shadow-black">
+        <header class="flex items-center justify-between">
+            <h4 id="header-text"></h4>
+            <nav>
+                <button id="prev" class="before:content-[''] before:w-1/2 before:h-1/2 transition-all
+                before:top1/2 before:left-1/2 before:border-t-2 before:border-gray-300 before:absolute 
+                cursor-pointer before:border-r-2 translate-x-[-50%] translate-y-[50%] -rotate-[135deg]
+                bg-transparent w-5 h-5 relative top-1/2 border-0 hover:scale-125 duration-300
+                hover:before:border-black">
+                <button id="next" class="before:content-[''] before:w-1/2 before:h-1/2 transiton-all
+                before:top1/2 before:left-1/2 before:border-t-2 before:border-gray-300 before:absolute 
+                cursor-pointer before:border-r-2 translate-x-[-50%] translate-y-[-20%] rotate-[45deg]
+                bg-transparent w-5 h-5 relative top-1/2 border-0 hover:scale-125 duration-300
+                hover:before:border-black">
+            </nav>
+        </header>
+        <section>
+            <ul id="days" class="flex flex-wrap text-center font-light" >
+                <li class="w-[calc(100%/7)] mt-6 relative z-10">Sun</li>
+                <li class="w-[calc(100%/7)] mt-6 relative z-10">Mon</li>
+                <li class="w-[calc(100%/7)] mt-6 relative z-10">Tues</li>
+                <li class="w-[calc(100%/7)] mt-6 relative z-10">Wed</li>
+                <li class="w-[calc(100%/7)] mt-6 relative z-10">Thurs</li>
+                <li class="w-[calc(100%/7)] mt-6 relative z-10">Fri</li>
+                <li class="w-[calc(100%/7)] mt-6 relative z-10">Sat</li>
+            </ul>
+            <ul id="dates" class="flex flex-wrap text-center">
+
+            </ul>
+        </section>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+   <script src="{% static 'calendar/js/calendarController.js' %}"></script>
+{% endblock %}	

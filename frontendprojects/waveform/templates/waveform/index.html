@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}font-mulish  bg-blue-500{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="container" class="bg-black/40 py-10 px-5 rounded-lg">
+        <h3 class="text-center text-white">Please Login</h3>
+        <form class="text-white" action="">
+            <div class="form-control bg-transparent relative my-5 mt-10 w-80">
+                <input  id="mail" class="border-0 rounded-lg outline-none
+                bg-transparent block w-full py-4 ring-0 " 
+                type="text" required>
+                <label class="ml-2 pt-4" for="mail">Email</label>
+            </div>
+            <div class="form-control bg-transparent relative my-5 mt-10 w-80">
+                <input id="pass" class="border-0 rounded-lg outline-none
+                bg-transparent block w-full py-4 ring-0 " 
+                type="password" required>
+                <label class="ml-2 pt-4" for="pass">Password</label>
+            </div>
+            <button class="btn my-2 cursor-pointer border-0 inline-block w-full py-2 text-gray-700 bg-blue-300 rounded-md
+                active:scale-95 hover:bg-blue-400 hover:text-white">Login</button>
+            <small class="text">Don't have an account?
+                <a class="text-blue-300" href="">Register</a>
+            </small>
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}	
