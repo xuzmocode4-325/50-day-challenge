@@ -36,6 +36,7 @@ TAILWIND_APP_NAME = 'theme'
 
 INSTALLED_APPS = [
     'frontendprojects',
+    'jokes',
     'cards',
     'steps',
     'theme',

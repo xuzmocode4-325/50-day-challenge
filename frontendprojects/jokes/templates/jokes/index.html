@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-gray-800{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %} {% endblock %}
+
+{% block content%}
+    
+    <div id="container" class="
+        bg-slate-200 p-12 rounded-lg shadow 
+        shadow-black w-[80vw]">
+        <h3 id="title" class="opacity-70 tracking-wider text-2xl">Try Not To Laugh Challenge 🤣</h3>
+        <div>
+            <p id="joke" class="text-4xl text-center my-10">// Joke goes here</p>
+        </div>
+        <button id="jokeBtn" class="
+            hover:border-transparent hover:bg-gray-700 hover:text-white
+            border border-black p-3 rounded-md">
+            Next Joke
+        </button>
+    </div>
+    
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'jokes/js/getJokes.js' %}"></script>
+{% endblock %}	

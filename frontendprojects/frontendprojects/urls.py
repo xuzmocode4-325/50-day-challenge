@@ -31,5 +31,6 @@ urlpatterns = [
     path('split/', include('split_landing.urls')),
     path('waveform/', include('waveform.urls')),
     path('calendar/', include('calendar.urls')),
+    path('jokes/', include('jokes.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
