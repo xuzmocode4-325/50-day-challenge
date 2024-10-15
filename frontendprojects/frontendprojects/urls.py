@@ -32,5 +32,6 @@ urlpatterns = [
     path('waveform/', include('waveform.urls')),
     path('calendar/', include('calendar.urls')),
     path('jokes/', include('jokes.urls')),
+    path('keycodes/', include('keycodes.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

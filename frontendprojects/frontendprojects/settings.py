@@ -27,13 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
-
-# Application definition
-TAILWIND_APP_NAME = 'theme'
-
 INSTALLED_APPS = [
     'frontendprojects',
     'jokes',
@@ -41,6 +34,7 @@ INSTALLED_APPS = [
     'steps',
     'theme',
     'search',
+    'keycodes',
     'waveform',
     'blureffect',
     'navigation',
@@ -143,3 +137,13 @@ STATIC_ROOT = BASE_DIR / 'theme' / 'static'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Tailwind Django Settings
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+# Application definition
+TAILWIND_APP_NAME = 'theme'

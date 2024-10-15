@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-[#e1e1e1]{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<div id="insert">
+    <div id="key-1" class="border border-[#999999] bg-[#eee]
+        relative shadow flex flex-col p-4 m-10 shadow-gray-600
+        ">
+        a
+        <small class="absolute -top-6 left-0 text-center w-full
+        text-[#555]">event.key</small>
+    </div>
+    <div id="key-2" class="border border-[#999999] bg-[#eee]
+        relative shadow flex flex-col p-4 m-10 shadow-gray-600
+        ">
+        65
+        <small class="absolute -top-6 left-0 text-center w-full
+        text-[#555]">event.keycCode</small>
+
+    </div>
+    <div id="key-3" class="border border-[#999999] bg-[#eee]
+        relative shadow flex flex-col p-4 m-10 shadow-gray-600
+        ">
+        KeyA
+        <small class="absolute -top-6 left-0 text-center w-full 
+        text-[#555]">event.code</small>
+    </div>
+    <div id="key-4" class="border-b border-[#999999]
+    relative flex flex-col p-4 m-10 shadow-gray-600
+    ">
+    Press any key to get the keyCode 
+        <small class="absolute -top-6 left-0 text-center w-full 
+        text-[#555] flex flex-row justify-between">
+            <p>Shift: false</p>
+            <p>Alt: false</p>
+            <p>Cntrl: false</p>
+        </small>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'keycodes/js/printKeyCodes.js' %}"></script>
+{% endblock %}	
