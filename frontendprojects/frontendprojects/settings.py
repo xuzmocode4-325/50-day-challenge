@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'frontendprojects',
+    'faq',
     'jokes',
     'cards',
     'steps',

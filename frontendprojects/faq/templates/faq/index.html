@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-green-200{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}  {% endblock %}
+
+{% block content%}
+    <h2 class="my-12 mx-0 text-center">Frequently Asked Questions</h2>
+    <div id="faq-container" class="m-o max-w-screen-md">
+        <div id="faq" class="">
+            <h3 class="faq mb-4" id="title">
+                What services do you offer?
+    
+            </h3>
+            <p id="faq-text">
+                We offer a wide range of services including 
+                [list specific services such as web design, 
+                digital marketing, consulting, etc.]. 
+                Our goal is to provide tailored solutions 
+                that meet the unique needs of each client.
+            </p>
+            <button id="faq-toggl">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="faq" class="">
+            <h3 class="faq mb-4" id="title">
+                How can I contact customer support?
+    
+            </h3>
+            <p id="faq-text">
+                You can reach our customer support team via email at 
+                [support@example.com] or by calling us at [phone number]. 
+                Our support hours are [insert hours],
+                and we strive to respond to all inquiries within 24 hours.
+            </p>
+            <button id="faq-toggl">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="faq" class="">
+            <h3 class="faq mb-4" id="title">
+                What is your return policy?
+            </h3>
+            <p id="faq-text">
+                We have a customer-friendly return policy 
+                that allows you to return products within 
+                [insert time frame, e.g., 30 days] 
+                of purchase for a full refund or exchange, 
+                provided they are in their original condition. 
+                For more details, please visit our Returns page.
+            </p>
+            <button id="faq-toggl">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="faq" class="">
+            <h3 class="faq mb-4" id="title">
+                Do you offer discounts for bulk purchases?
+            </h3>
+            <p id="faq-text">
+                Yes, we do! We offer discounts for bulk orders 
+                depending on the quantity purchased. 
+                Please contact our sales team at [sales@example.com] 
+                for a customized quote based on your needs.
+            </p>
+            <button id="faq-toggl">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="faq" class="">
+            <h3 class="faq mb-4" id="title">
+                How do I track my order?
+            </h3>
+            <p id="faq-text">
+                Once your order has been shipped, 
+                you will receive an email with a 
+                tracking number and a link to track your package. 
+                You can also log into your account on our website 
+                to view your order status at any time.
+            </p>
+            <button id="faq-toggl">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="faq" class="">
+            <h3 class="faq mb-4 mr-6" id="title">
+                Can I change or cancel my order after it's been placed?
+            </h3>
+            <p id="faq-text">
+                If you need to change or cancel your order, 
+                please contact us as soon as possible.
+                We can make changes or cancel orders that have not yet been processed. 
+                Once an order is in transit, 
+                we may not be able to make adjustments.
+            </p>
+            <button id="faq-toggl">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'faq/js/faqSectionController.js' %}"></script>
+{% endblock %}	

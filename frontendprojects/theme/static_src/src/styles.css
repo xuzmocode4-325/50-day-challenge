@@ -48,6 +48,65 @@
         before:-translate-y-1/2 before:bg-black 
         before:rounded-full before:-z-10 text-gray-300
     }
+
+    #faq {
+        @apply bg-transparent m-6 px-7 py-5 relative 
+        overflow-hidden duration-500 ease-in-out
+        border border-black rounded-lg shadow-md shadow-gray-700
+    }
+
+
+    #faq.activated {
+        @apply bg-green-50 
+    }
+
+    #faq.activated::before, 
+    #faq.activated::after { 
+        content: '\f075';
+        font-family: 'Font Awesome 5 Free';
+        color: #0ea5e9;
+        position: absolute;
+        top: 20px;
+        left:20px;
+        z-index: 0;
+        font-size: 7rem;
+        opacity: 0.2;
+    }
+
+    #faq.activated::before {
+        color: #16a34a;
+        top: -10px;
+        left: 75px;
+        transform: rotateY(180deg);
+    }
+
+    #faq-text {
+        @apply hidden text-xl
+    }
+
+   
+    #faq.activated #faq-text {
+        @apply block
+    }
+
+    #faq-toggl {
+        @apply cursor-pointer flex items-center justify-center 
+        absolute top-7 right-7 h-7 w-7 text-lg hover:scale-150
+    }
+
+    #faq-toggl .fa-times {
+        @apply hidden
+    }
+
+    #faq.activated #faq-toggl .fa-times {
+        @apply block
+    }
+
+    #faq.activated #faq-toggl .fa-chevron-down {
+        @apply hidden
+    }
+
+
     
 } 
 
@@ -56,4 +115,6 @@
       @apply rotate-[-25deg] sm:rotate-[-20deg]
     }
 }
+
+
 

@@ -33,5 +33,6 @@ urlpatterns = [
     path('calendar/', include('calendar.urls')),
     path('jokes/', include('jokes.urls')),
     path('keycodes/', include('keycodes.urls')),
+    path('faq/', include('faq.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
