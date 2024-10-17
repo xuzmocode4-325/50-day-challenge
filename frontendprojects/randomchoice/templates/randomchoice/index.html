@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-red-400{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %} {% endblock %}
+
+{% block content%}
+    <div id="container">
+        <h3 class="mb-4 text-center">Add Tags</h3>
+        <p class="text-xl text-center text-wrap max-w-[95%] m-2">Enter your tags in the text area. Separate each new item in the list using a comma.<p>
+        <textarea 
+            placeholder="Type options here..."
+            name="options"
+            class="m-2 p-2 w-[95%] my-4 min-h-32 text-lg text-white rounded-md border-0 bg-gray-500/30" 
+            id="textarea"></textarea>
+        <div class="m-3 inline-flex justify-between" id="tags">
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'randomchoice/js/randomChoiceController.js' %}"></script>
+{% endblock %}	

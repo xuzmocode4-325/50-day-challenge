@@ -84,7 +84,6 @@
         @apply hidden text-xl
     }
 
-   
     #faq.activated #faq-text {
         @apply block
     }
@@ -105,9 +104,6 @@
     #faq.activated #faq-toggl .fa-chevron-down {
         @apply hidden
     }
-
-
-    
 } 
 
 @layer components {
