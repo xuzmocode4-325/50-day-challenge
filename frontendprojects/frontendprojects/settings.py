@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blureffect',
     'navigation',
     'scroll',
+    'stylishnav',
     'randomchoice',
     'calendar',
     'tailwind',

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-foo{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}  {% endblock %}
+
+{% block content%}
+    <nav id="nav" class="group bg-slate-50 p-2.5 relative w-20
+            inline-flex  flex-row align-center justify-center rounded-sm 
+            shadow shadow-gray-400 transition-[width] duration-700">
+        <ul class="flex items-center justify-center m-0 p-0 
+            transition-all w-0 duration-700 group-[.activated]:w-full">
+            <li class="rotate-0 opacity-0 transition duration-700
+                group-[.activated]:rotate-[360deg] group-[.activated]:opacity-100">
+                <a class="relative mx-3" href="#">Home</a>
+            </li>
+            <li class="rotate-0 opacity-0 transition duration-700
+                group-[.activated]:rotate-[360deg] group-[.activated]:opacity-100">
+                <a class="relative mx-3" href="#">About</a>
+            </li>
+            <li class="rotate-0 opacity-0 transition duration-700
+                group-[.activated]:rotate-[360deg] group-[.activated]:opacity-100">
+                <a class="relative mx-3" href="#">Blog</a>
+            </li>
+            <li class="rotate-0 opacity-0 transition duration-700
+                group-[.activated]:rotate-[360deg] group-[.activated]:opacity-100">
+                <a class="relative mx-3" href="#">Contact</a>
+            </li>
+        </ul>
+        <button class="transition-all duration-700 focus:outline-0 
+            border-0 cursor-pointer p-0 w-7 h-7" id="toggle">
+            <div class="transition-all duration-700 absolute 
+                bg-gray-500 h-0.5 w-6 top-[17.5px] translate-x-[10%] group-[.activated]:right-4
+                group-[.activated]:rotate-[-765deg] 
+                group-[.activated]:translate-y-[5px]" class="line"></div>
+            <div class="transition-all duration-700 absolute 
+                bg-gray-500 h-0.5 w-6 top-[27.5px] translate-x-[10%] group-[.activated]:right-4
+                group-[.activated]:rotate-[765deg] 
+                group-[.activated]:translate-y-[-5px]" class="line"></div>
+        </button>
+    </nav>
+ 
+{% endblock %}
+
+{% block script %} 
+    <script src="{% static 'stylishnav/js/navController.js'%}"></script>
+{% endblock %}	 

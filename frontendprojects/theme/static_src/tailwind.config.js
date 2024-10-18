@@ -43,6 +43,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            backgroundImage: {
+                foo: 'linear-gradient(to bottom, #ecfccb 0%, #ecfccb 50%, #6ee7b7 50%, #6ee7b7 100%)',
+            },
             backgroundSize: {
                 'auto-100': 'auto 100%'
             },
