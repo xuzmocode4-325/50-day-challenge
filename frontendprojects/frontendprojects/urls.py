@@ -36,5 +36,6 @@ urlpatterns = [
     path('faq/', include('faq.urls')),
     path('randomchoice/', include('randomchoice.urls')),
     path('stylishnav/', include('stylishnav.urls')),
+    path('counter/', include('counter.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

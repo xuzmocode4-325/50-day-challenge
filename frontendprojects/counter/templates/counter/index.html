@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-orange-300{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="super-container" 
+        class="flex flex-col sm:flex-row align-middle justify-center gap-4 text-center">
+        <div id="counter-container" class="my-6 mx-12 px-2">
+            <i class="fab fa-x-twitter fa-3x"></i>
+            <div id="counter" data-target="25000" class="text-3xl mt-2">12000</div>
+            <span id="text">Twitter Followers</span>
+        </div>
+        <div id="counter-container" class="my-6 mx-12 px-2">
+            <i class="fab fa-youtube fa-3x"></i>
+            <div id="counter" data-target="3500" class="text-3xl mt-2">12000</div>
+            <span id="text">YouTube Subscribers</span>
+        </div>
+        <div id="counter-container" class="my-6 mx-12 px-2">
+            <i class="fab fa-instagram fa-3x"></i>
+            <div id="counter" data-target="12500" class="text-3xl mt-2">12000</div>
+            <span id="text">Instagram Followers</span>
+        </div>
+        <div id="counter-container" class="my-6 mx-12 px-2">
+            <i class="fab fa-linkedin fa-3x"></i>
+            <div id="counter" data-target="60000" class="text-3xl mt-2">12000</div>
+            <span id="text">Instagram Followers</span>
+        </div>
+    </div>
+{% endblock %}
+{% block script %}
+    <script src="{% static 'counter/js/counterController.js' %}"></script>
+{% endblock %}

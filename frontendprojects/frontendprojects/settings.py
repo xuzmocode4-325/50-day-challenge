@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'steps',
     'theme',
     'search',
+    'counter',
     'keycodes',
     'waveform',
     'blureffect',
