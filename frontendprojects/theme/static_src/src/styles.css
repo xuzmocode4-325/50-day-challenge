@@ -104,7 +104,16 @@
     #faq.activated #faq-toggl .fa-chevron-down {
         @apply hidden
     }
-} 
+
+    #cup {
+        @apply bg-white m-1 border-solid border-blue-800 text-blue-800 transition-colors duration-300 ease-linear
+    }
+
+    #cup.full {
+        @apply bg-blue-400 text-white
+    }
+
+}
 
 @layer components {
     .rotated {

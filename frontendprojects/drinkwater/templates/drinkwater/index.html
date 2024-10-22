@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-blue-500 text-white{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <section class="text-center flex justify-center items-center flex-col">
+        <h1 class="my-4">Drink Water</h1>
+        <h3 class="my-4 font-light">Goal: 2liters</h3>
+        <div id="cup" class="h-72 w-40 border-4 rounded-b-3xl flex flex-col items-center justify-center text-center">
+            <div id="remained" class="flex text-center items-center justify-center flex-col flex-1">
+                <span id="liters" class="font-bold"></span>
+                <small>Remained</small>
+            </div>
+            <div id="percentage" class="bg-blue-400 w-full rounded-b-2xl text-xl font-bold">
+            </div>
+        </div>
+
+        <p id="text" class="my-8 text-xl">
+            How many glasses of water have you had to drink today today?
+        </p>
+
+        <div id="cups" class="flex flex-row flex-wrap justify-between items-center">
+            <div id="cup" class="small cursor-pointer h-20 w-14 border-2 text-md rounded-b-xl flex items-center justify-center text-center">250ml</div>
+            <div id="cup" class="small cursor-pointer h-20 w-14 border-2 text-md rounded-b-xl flex items-center justify-center text-center">250ml</div>
+            <div id="cup" class="small cursor-pointer h-20 w-14 border-2 text-md rounded-b-xl flex items-center justify-center text-center">250ml</div>
+            <div id="cup" class="small cursor-pointer h-20 w-14 border-2 text-md rounded-b-xl flex items-center justify-center text-center">250ml</div>
+            <div id="cup" class="small cursor-pointer h-20 w-14 border-2 text-md rounded-b-xl flex items-center justify-center text-center">250ml</div>
+            <div id="cup" class="small cursor-pointer h-20 w-14 border-2 text-md rounded-b-xl flex items-center justify-center text-center">250ml</div>
+            <div id="cup" class="small cursor-pointer h-20 w-14 border-2 text-md rounded-b-xl flex items-center justify-center text-center">250ml</div>
+            <div id="cup" class="small cursor-pointer h-20 w-14 border-2 text-md rounded-b-xl flex items-center justify-center text-center">250ml</div>
+        </div>
+    </section>
+    
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'drinkwater/js/waterController.js' %}"></script>
+{% endblock %}	

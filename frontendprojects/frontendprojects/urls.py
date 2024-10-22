@@ -37,5 +37,6 @@ urlpatterns = [
     path('randomchoice/', include('randomchoice.urls')),
     path('stylishnav/', include('stylishnav.urls')),
     path('counter/', include('counter.urls')),
+    path('drinkwater/', include('drinkwater.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

@@ -4,7 +4,5 @@ from . import views
 # Create your views here.
 
 urlpatterns = [
-    path("", 
-        views.IndexView.as_view(), 
-        name="jokes"),
+    path('', views.IndexView.as_view(), name='jokes'),
 ]

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'counter',
     'keycodes',
     'waveform',
+    'drinkwater',
     'blureffect',
     'navigation',
     'scroll',
