@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-indigo-950{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <header class="p-4 flex justify-end z-10">
+        <h4 id="logo" class="cursor-pointer
+            absolute text-indigo-100 bg-indigo-800 p-3 
+            rounded-md left-0 top-10 -translate-y-1/2 ml-4">WebFlix
+        </h4>
+        <form  id="form" action="">
+            <input 
+                class="
+                    absolute top-5 right-5 w-72
+                    bg-transparent text-indigo-50 active:border-indigo-300 
+                    active:outline-none text-inherit rounded-md" 
+                id="search" type="text" placeholder="search...">
+                <i class="fa fa-search mr-1 hover:scale-125 cursor-pointer absolute top-10 right-5 -translate-x-1/2 -translate-y-1/2 text-indigo-50"></i>
+        </form>
+    </header>
+    <main id="main" class="flex justify-center flex-wrap gap-4 mt-12 -z-10">
+    </main>
+{% endblock %}
+
+
+{% block script %}
+    {{ data|json_script:"context-data" }}
+    <script src="{% static 'movies/js/moviePageController.js' %}">
+    </script>
+{% endblock %}	

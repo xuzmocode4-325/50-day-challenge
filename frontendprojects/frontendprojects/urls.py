@@ -38,5 +38,6 @@ urlpatterns = [
     path('stylishnav/', include('stylishnav.urls')),
     path('counter/', include('counter.urls')),
     path('drinkwater/', include('drinkwater.urls')),
+    path('movies/', include('movies.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
