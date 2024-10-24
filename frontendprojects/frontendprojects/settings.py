@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'counter',
     'calendar',
     'tailwind',
+    'slideshow',
     'keycodes',
     'waveform',
     'drinkwater',
