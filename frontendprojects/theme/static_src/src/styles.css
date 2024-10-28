@@ -112,12 +112,15 @@
     #cup.full {
         @apply bg-blue-400 text-white
     }
-
 }
 
 @layer components {
     .rotated {
       @apply rotate-[-25deg] sm:rotate-[-20deg]
+    }
+
+    div#slide-bg {
+        @apply before:-z-50 before:bg-black/5
     }
 }
 

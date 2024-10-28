@@ -12,28 +12,27 @@
 {% block heading %}{% endblock %}
 
 {% block alt_content%}
-<main class="
-    flex flex-col items-center justify-center m-0 
-    transition-all duration-500 bg-center bg-cover 
-    w-full h-full absolute top-0 left-0 before:content-['']
-    before:absolute before:top-0 before:left-0 before:w-screen before:h-screen
-    before:bg-black/30 before:z-0" style="background-image: url(https://picsum.photos/seed/picsum/1200/900);">
-    <div id="slider-container" class="shadow-lg shadow-black/30 h-[70vh] w-[70vw] relative overflow-hidden">
-        <button id="left" class="bg-black/30 border-amber-400 transition-all ease-in-out duration-300 text-3xl text-white border-2 hover:scale-110 fixed z-20 py-5 px-3 top-1/2 origin-center translate-y-[-50%] left-[calc(15vw-70px)]">
+<div id="slide-bg" class=" flex flex-col items-center justify-center m-0 transition-all duration-500 bg-center 
+    bg-cover w-full h-full absolute top-0 left-0">
+    <div class="absolute top-0 left-0 w-screen h-screen bg-black/60 -z-10" ></div>
+    <div id="slider-container" class="shadow-2xl shadow-black/90 rounded-lg h-[70vh] w-[70vw] relative overflow-hidden">
+        <button id="left" class="rounded-l-2xl  cursor-pointer bg-amber-400/50 border-amber-400/50 transition-all ease-in-out duration-300 text-3xl text-white border-2 hover:scale-110 fixed z-20 py-5 px-3 top-1/2 origin-center translate-y-[-50%] left-[calc(15vw-35px)] sm:left-[calc(15vw-70px)]">
             <i class="fas fa-arrow-left"></i>
         </button>
-        <div id="slide" class="z-50 absolute transition-all duration-500 top-[-15vh] left-[-15vh] w-[100vw] h-[100vh] bg-center bg-cover activated has-[.activated]:opacity-100" style="background-image: url(https://picsum.photos/seed/picsum/1200/900);"></div>
-        <div id="slide" class="z-50 absolute transition-all duration-500 top-[-15vh] left-[-15vh] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100" style="background-image: url(https://picsum.photos/seed/picsum/1200/900);"></div>
-        <div id="slide" class="z-50 absolute transition-all duration-500 top-[-15vh] left-[-15vw] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100"></div>
-        <div id="slide" class="z-50 absolute transition-all duration-500 top-[-15vh] left-[-15vw] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100"></div>
-        <div id="slide" class="z-50 absolute transition-all duration-500 top-[-15vh] left-[-15vw] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100"></div>
-        <button id="right" class="bg-black/30 border-amber-400 transition-all ease-in-out duration-300 text-3xl text-white border-2 hover:scale-110 fixed z-20 py-5 px-3 top-1/2 origin-center translate-y-[-50%] right-[calc(15vw-70px)]">
+        <div id="slide-1" class="slide z-10 absolute transition-all duration-500 top-[-10vh] left-[-10vh] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100" style="background-image: url(https://picsum.photos/seed/a/1200/900);"></div>
+        <div id="slide-2" class="slide z-10 absolute transition-all duration-500 top-[-10vh] left-[-10vh] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100" style="background-image: url(https://picsum.photos/seed/b/1200/900);"></div>
+        <div id="slide-3" class="slide z-10 absolute transition-all duration-500 top-[-10vh] left-[-10vw] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100" style="background-image: url(https://picsum.photos/seed/c/1200/900);"></div>
+        <div id="slide-4" class="slide z-10 absolute transition-all duration-500 top-[-10vh] left-[-10vw] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100" style="background-image: url(https://picsum.photos/seed/f/1200/900);"></div>
+        <div id="slide-5" class="slide z-10 absolute transition-all duration-500 top-[-10vh] left-[-10vw] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100" style="background-image: url(https://picsum.photos/seed/g/1200/900);"></div>
+        <div id="slide-5" class="slide z-10 absolute transition-all duration-500 top-[-10vh] left-[-10vw] w-[100vw] h-[100vh] bg-center bg-cover opacity-0 has-[.activated]:opacity-100" style="background-image: url(https://picsum.photos/seed/x/1200/900);"></div>
+        <button id="right" class="cursor-pointer rounded-r-2xl bg-amber-400/50 border-amber-400/50 transition-all ease-in-out duration-300 text-3xl text-white border-2 hover:scale-110 fixed z-20 py-5 px-3 top-1/2 origin-center translate-y-[-50%] right-[calc(15vw-35px)] sm:right-[calc(15vw-70px)]">
             <i class="fas fa-arrow-right"></i>
         </button>
     </div>
-</main>
+</div>
 
 {% endblock %}
 
 {% block script %}
+ <script src="{% static 'slideshow/js/slideController.js' %}"></script>
 {% endblock %}	

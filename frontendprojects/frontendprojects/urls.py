@@ -40,5 +40,6 @@ urlpatterns = [
     path('drinkwater/', include('drinkwater.urls')),
     path('movies/', include('movies.urls')),
     path('slideshow/', include('slideshow.urls')),
+    path('clock/', include('clock.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
