@@ -124,5 +124,10 @@
     }
 }
 
+.fill{
+    @apply w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 cursor-pointer bg-cover bg-center;
+	background-image: url(https://picsum.photos/600/600);
+}
+
 
 

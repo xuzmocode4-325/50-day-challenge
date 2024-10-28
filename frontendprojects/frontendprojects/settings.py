@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'scroll',
     'search',
     'counter',
+    'dragdrop',
     'calendar',
     'tailwind',
     'slideshow',

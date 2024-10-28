@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet" href="{% static 'dragdrop/css/styles.css' %}"><link>
+    <!--Add Drag Drop Touch for Mobile Compatibility-->
+{% endblock %}
+
+{% block custom_body_styles %}bg-gray-300{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<div class="grid grid-flow-rows-3 grid-flow-col gap-4">
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true" class="fill"></div>
+    </div>
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true"></div>
+    </div>
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true"></div>
+    </div>
+</div>
+<div class="grid grid-flow-rows-3 grid-flow-col gap-4">
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true"></div>
+    </div>
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true"></div>
+    </div>
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true"></div>
+    </div>
+</div>
+<div class="grid grid-flow-rows-3 grid-flow-col gap-4">
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true"></div>
+    </div>
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true"></div>
+    </div>
+    <div id="empty" class="bg-orange-200/50 box w-16 h-16 md:h-32 md:w-32 lg:h-64 lg:w-64 border mb-2">
+        <div draggable="true"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'dragdrop/js/dragController.js' %}"></script>
+{% endblock %}	
