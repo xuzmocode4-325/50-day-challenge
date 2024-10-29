@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-gray-400{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="art-div" class="border border-blue-500 w-[300px] h-[300px]
+    sm:w-[600px] sm:h-[600px] md:w-[750px] md:h-[750px] lg:w-[1000px] lg:h-[1000px]"></div>
+    <div id="toolbox" class="flex items-center  gap-1 md:gap-2 justify-start  mt-5 px-2 border-2 py-0.5 bg-blue-500 border-blue-500 rounded-md">
+        <button id="decrease" class="m-1 p-1 w-9 h-9 md:w-12 md:h-12 bg-gray-100 inline-flex items-center justify-center text-xl md:text-3xl rounded-md">-</button>
+        <span id="size" class="m-1 p-1 w-9 h-9 md:w-12 md:h-12 bg-gray-200 inline-flex items-center justify-center text-xl rounded-full">5</span>
+        <button id="increase" class="m-1 p-1 w-9 h-9 md:w-12 md:h-12 bg-gray-100 inline-flex items-center justify-center text-xl md:text-3xl rounded-md">+</button>
+        <input type="color" class="m-1 p-1 w-9 h-9 md:w-12 md:h-12 bg-gray-100 inline-flex justify-center text-xl md:text-3xl rounded-md" id="color-btn">
+        <button id="clear-btn" class="ml-auto m-1 p-1 w-9 h-9 md:w-12 md:h-12 bg-gray-100 inline-flex items-center justify-center text-xl md:text-3xl rounded-md">X</button>
+    </div> 
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'drawing/js/drawingController.js'%}"></script>
+{% endblock %}	

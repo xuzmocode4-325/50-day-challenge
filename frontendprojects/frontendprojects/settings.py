@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'dragdrop',
     'calendar',
     'tailwind',
+    'drawing',
     'slideshow',
     'keycodes',
     'waveform',
