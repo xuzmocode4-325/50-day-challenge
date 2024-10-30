@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+<link rel="stylesheet" href="{% static 'kinetic/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}bg-emerald-300{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="kinetic" class="relative w-20 h-20 flex items-center justify-center"></div>
+    <div class="w-16 h-16 origin-center absolute rounded-full bg-emerald-300"></div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'kinetic/js/kineticController.js' %}"></script>
+{% endblock %}	
