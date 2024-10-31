@@ -44,5 +44,6 @@ urlpatterns = [
     path('dragdrop/', include('dragdrop.urls')),
     path('drawing/', include('drawing.urls')),
     path('kinetic/', include('kinetic.urls')),
+    path('placeholder/', include('placeholder.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

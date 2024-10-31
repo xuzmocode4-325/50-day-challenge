@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet"  href="{% static 'placeholder/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}bg-gray-200{% endblock %} 
+
+{% block custom_section_styles %}[#ec]{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div class="shadow-lg shadow-black/50 rounded-md overflow-hidden w-96">
+        <div id="header" class="card-header animated-bg h-60">
+           
+        </div>
+        <div id="card-content" class="bg-white p-8">
+            <h4 id="title" class="animated-bg animated-bg-text m-0 ">
+                &nbsp; 
+            </h4>
+            <p class="text-gray-500 my-3" id="excerpt">
+                &nbsp; 
+                <span class="text animated-bg">&nbsp;</span>
+                <span class="text animated-bg">&nbsp;</span>
+                <span class="text animated-bg">&nbsp;</span>
+            </p>
+            <div id="author" class="flex">
+                <div id="profile" class="animated-bg rounded-full overflow-hidden h-12 w-12">
+                    &nbsp;
+                </div>
+                <div id="authour-info" class="flex flex-col ml-1 justify-around w-32">
+                    <strong id="name" class="animated-bg text">
+                        &nbsp; 
+                    </strong>
+                    <small id="date" class="animated-bg text mt-1 text-gray-400">
+                        &nbsp; 
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'placeholder/js/placeholderController.js' %}"></script>
+{% endblock %}	
