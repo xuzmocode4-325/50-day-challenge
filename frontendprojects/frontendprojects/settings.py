@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'stylishnav',
     'randomchoice',
     'split_landing',
+    'verticalslider',
     'frontendprojects',
     'django_browser_reload',
     'django.contrib.admin',

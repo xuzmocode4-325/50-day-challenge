@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block alt_content%}
+
+<div id="slider-container" class="relative overflow-hidden w-screen h-screen">
+    <div id="left-slide" class="w-full h-[35%] sm:h-full sm:w-[35%] absolute top-0 left-0 transition-all duration-1000 ease-in-out">
+        <div class="w-full h-full flex flex-col items-center justify-center text-white text-center" style="background-color: rosybrown;">
+            <h3 class="mb-3 -mt-4">Inner City</h3>
+            <p class="px-8">Where everythin connects.</p>
+        </div>
+        <div class="w-full h-full flex flex-col items-center justify-center text-white" style="background-color: #6fa0a7;">
+            <h3 class="mb-3 -mt-4">Tides Connect</h3>
+            <p class="px-8">Take a dive.</p>
+        </div>
+        <div class="w-full h-full flex flex-col items-center justify-center text-white" style="background-color: #E29721;">
+            <h3 class="mb-3 -mt-4">Yellow Cab</h3>
+            <p class="px-8">Getting you where you need to be.</p>
+        </div>
+        <div class="w-full h-full flex flex-col items-center justify-center text-white" style="background-color: #232B28">
+            <h3 class="mb-3 -mt-4">Sweet Sweet Vine</h3>
+            <p class="px-8">Taste the best of nature.</p>
+        </div>
+        <div class="w-full h-full flex flex-col items-center justify-center text-white" style="background-color: #21203D">
+            <h3 class="mb-3 -mt-4">Starry Night</h3>
+            <p class="px-8">Look deep into the vast expanse.</p>
+        </div>
+    </div>
+    <div id="right-slide" class="w-full h-full sm:h-full absolute top-[35%] left-0 sm:left-[35%] sm:top-0 bg-gray-300 transition-all duration-500 ease-in-out">
+        <div class="w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://picsum.photos/seed/aa/1200/900);">
+        </div>
+        <div class="w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://picsum.photos/seed/bb/1200/900);">
+        </div>
+        <div class="w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://picsum.photos/seed/cc/1200/900);">
+        </div>
+        <div class="w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://picsum.photos/seed/dd/1200/900);">
+        </div>
+        <div class="w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://picsum.photos/seed/ee/1200/900);">
+        </div>
+    </div>
+    <div id="action-buttons" class="">
+        <button id="down-left" class="bg-white p-2 absolute top-[35%] left-[40%] -translate-y-[15%] sm:top-1/2 rotate-90 sm:left-[35%] sm:rotate-0 sm:-translate-x-[100%] sm:translate-y-[50%] rounded-sm">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+        <button id="up-right" class=" bg-white p-2 absolute top-[30%] right-[40%] -translate-y-[0%] rotate-[90deg] sm:right-[61%] sm-left[35%] sm:rotate-0 sm:top-1/2 sm:left-[35%]  sm:-translate-y-[50%] rounded-sm">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'verticalslider/js/sliderController.js' %}"></script>
+{% endblock %}	

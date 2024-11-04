@@ -46,5 +46,6 @@ urlpatterns = [
     path('kinetic/', include('kinetic.urls')),
     path('placeholder/', include('placeholder.urls')),
     path('stickynav/', include('stickynav.urls')),
+    path('verticalslider/', include('verticalslider.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
