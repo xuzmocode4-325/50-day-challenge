@@ -1,0 +1,8 @@
+#nav.active {
+    background: #fff;
+}
+
+#nav.active a {
+    color: #222;
+}
+

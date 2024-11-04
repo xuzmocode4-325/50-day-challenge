@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'slideshow',
     'keycodes',
     'waveform',
+    'stickynav',
     'placeholder',
     'drinkwater',
     'blureffect',
