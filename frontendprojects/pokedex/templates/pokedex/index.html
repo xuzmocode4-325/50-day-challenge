@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-[#efefbb]{% endblock %} 
+
+{% block custom_section_styles %}text-center mt-7{% endblock %}
+
+{% block heading %}Pokedex
+{% endblock %}
+
+{% block content%}
+<div id="poke-container" class="flex flex-wrap items-center justify-center gap-4 mt-5 my-auto max-w-screen-xl">
+</div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'pokedex/js/pokeController.js' %}"></script>
+{% endblock %}	

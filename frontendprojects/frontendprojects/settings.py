@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'movies',
     'scroll',
     'search',
+    'pokedex',
     'counter',
     'dragdrop',
     'calendar',

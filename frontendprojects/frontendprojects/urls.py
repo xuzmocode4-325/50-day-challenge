@@ -47,5 +47,6 @@ urlpatterns = [
     path('placeholder/', include('placeholder.urls')),
     path('stickynav/', include('stickynav.urls')),
     path('verticalslider/', include('verticalslider.urls')),
+    path('pokedex/', include('pokedex.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
