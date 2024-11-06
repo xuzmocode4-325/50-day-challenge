@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'cards',
     'steps',
     'theme',
+    'toast',
     'movies',
     'scroll',
     'search',

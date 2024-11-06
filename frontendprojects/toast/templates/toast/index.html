@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-indigo-700{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %} {% endblock %}
+
+{% block content%}
+<div id="toasts" class="fixed bottom-3 right-3 flex flex-col items-end">
+</div>
+
+<div class="flex flex-wrap items-center justify-center flex-col gap-4">
+    <button id="button" class="border border-white py-3 px-5 rounded-md text-white hover:bg-white hover:text-indigo-700">Show Notification</button>
+    <!-- <button id="button-success" class="border border-white py-3 px-5 rounded-md text-green-400 hover:bg-green-400 hover:border-green-400 hover:text-indigo-700">Show Sucess</button>
+    <button id="button-caution" class="border border-white py-3 px-5 rounded-md  text-yellow-400 hover:bg-yellow-400 hover:border-yellow-400 hover:text-indigo-700">Show Caution</button>
+    <button id="button-error" class="border border-white py-3 px-5 rounded-md  text-red-300 hover:bg-red-300 hover:border-red-300 hover:text-indigo-700">Show Error</button> -->
+</div>
+
+
+
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'toast/js/toastController.js' %}"></script>
+{% endblock %}	
