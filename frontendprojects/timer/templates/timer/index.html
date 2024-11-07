@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet" href="{% static 'timer/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}bg-gray-700{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div class="bg-gray-900 p-16 rounded-2xl shadow w-full max-w-sm">
+
+        <h3 class="text-white text-center">Countdown Timer</h3>
+
+        <div id="conic" class="bg-conic flex justify-center items-center
+            w-60 h-60 mx-auto my-10 rounded-full relative">
+            <p id="timer" class="text-blue-200 relative text-5xl z-10">00:00</p>
+
+            <div class="
+                w-[calc(100%-6px)] bg-gray-800 aspect-square rounded-full absolute inset-[3px]">
+            </div>
+
+            <!-- <div  class="h-1/2 absolute top-0">
+                <span id="marker" class="h-3 w-3 rounded-full absolute -top-1 -left-1 z-10 bg-white"></span>
+            </div> -->
+        </div>
+
+        <div class="flex flex-row items-center justify-evenly">
+
+            <div class="flex justify-center gap-6">
+                <button id="reset" class="flex justify-center hover:scale-125 transition-all duration-300 items-center w-10 h-10 bg-blue-300 rounded-full">
+                    <i class="fas fa-sync"></i>
+                </button>
+            </div>
+
+            <div class="flex justify-center gap-6">
+                <button id="play" class="play flex justify-center hover:scale-125 transition-all duration-300 items-center w-10 h-10 bg-blue-300 rounded-full">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'timer/js/timerController.js' %}"></script>
+{% endblock %}	

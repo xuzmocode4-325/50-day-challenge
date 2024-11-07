@@ -49,5 +49,6 @@ urlpatterns = [
     path('verticalslider/', include('verticalslider.urls')),
     path('pokedex/', include('pokedex.urls')),
     path('toast/', include('toast.urls')),
+    path('timer/', include('timer.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

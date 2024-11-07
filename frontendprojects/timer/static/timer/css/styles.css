@@ -1,0 +1,17 @@
+:root {
+    --degrees: 0deg;
+}
+
+.bg-conic {
+    background: conic-gradient(
+        transparent 0deg,
+        transparent var(--degrees),
+        white 0deg,
+        white 360deg
+    );
+}
+
+#marker {
+    transform-origin: bottom center;
+    transform: var(--degrees);
+}
