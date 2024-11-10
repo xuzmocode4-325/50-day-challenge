@@ -50,5 +50,6 @@ urlpatterns = [
     path('pokedex/', include('pokedex.urls')),
     path('toast/', include('toast.urls')),
     path('timer/', include('timer.urls')),
+    path('autotext/', include('autotext.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

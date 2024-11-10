@@ -57,12 +57,13 @@ module.exports = {
                   rotate: ['peer-rotated'],
                 },
             },
-            fontFamily: {
-                roboto: ['Roboto', 'sans-serif'],
-                mulish: ['Mulish', 'sans-serif'],
-                lato: ['Lato', 'sans-serif'],
-                ubuntu: ['Ubuntu', 'sans-serif']
-            },
+        },
+        fontFamily: {
+            roboto: ['Roboto', 'sans-serif'],
+            mulish: ['Mulish', 'sans-serif'],
+            lato: ['Lato', 'sans-serif'],
+            ubuntu: ['Ubuntu', 'sans-serif'],
+            matemasie: ['Matemasie', 'sans-serif']
         },
     },
     plugins: [

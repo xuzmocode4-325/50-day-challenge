@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+    .matemasie-regular {
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+{% endblock %}
+
+{% block custom_body_styles %}bg-green-300{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <h1 id="text" class="absolute matemasie-regular f text-6xl left-0 right-0 origin-center text-center">Text</h1>
+    <div class="flex flex-row gap-2 rounded-md bg-black/30 items-center justify-center absolute bottom-5 
+     px-4 py-2 ">
+        <label for="speed">Speed:</label>
+        <input value="1" class="w-16 text-center matemasie-regular rounded-md border-none bg-green-300 p-2 focus:outline-double" id="speed" type="number" min="1" max="5" step="1">
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'autotext/js/autotextController.js' %}"></script>
+{% endblock %}	

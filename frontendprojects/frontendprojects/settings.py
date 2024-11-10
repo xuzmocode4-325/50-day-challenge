@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
+    'autotext',
     'faq',
     'timer',
     'clock',
