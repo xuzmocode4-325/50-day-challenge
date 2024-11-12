@@ -57,6 +57,34 @@ module.exports = {
                   rotate: ['peer-rotated'],
                 },
             },
+            keyframes: {
+                'slide-on': {
+                    '0%': {
+                        transform: 'translateX(0) scale(1)'
+                    },
+                    '50%': {
+                        transform: 'translateX(20px) scale(1.1)'
+                    },
+                    '100%': {
+                        transform: 'translateX(40px) scale(1)'
+                    }
+                },
+                'slide-off': {
+                    '0%': {
+                        transform: 'translateX(40px) scale(1)'
+                    },
+                    '50%': {
+                        transform: 'translateX(20px) scale(1.1)'
+                    },
+                    '100%': {
+                        transform: 'translateX(0px) scale(1)'
+                    }
+                }
+            },
+            animation: {
+                'slide-on': 'slide-on 0.3s linear forwards',
+                'slide-off': 'slide-off 0.3s linear forwards',
+            }
         },
         fontFamily: {
             roboto: ['Roboto', 'sans-serif'],

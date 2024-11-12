@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet" href="{% static 'checkboxes/css/styles.css' %}"/>
+{% endblock %}
+
+{% block custom_body_styles %}bg-gray-300{% endblock %} 
+
+{% block custom_section_styles %}
+{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<h1>Business Inquiry</h1>
+<h2 class="my-4">How would you like your service?</h2>
+
+<div id="toggle-container" class="flex items-center mx-3 my-0 w-52">
+	<input class="group peer toggle hidden" type="checkbox" name="good" id="good">
+	<label for="good" class="peer-checked:bg-purple-600 w-20 h-10 inline-block rounded-full bg-gray-500 cursor-pointer mt-4 relative">
+        <div id="good ball" class="animate-slide-off bg-white w-[34px] h-[34px] rounded-full items-center justify-center absolute top-[3px] left-[3px]"></div>
+    </label>
+    <span class="mt-5  mx-5">Good</span>
+</div>
+
+<div id="toggle-container" class="flex items-center mx-3 my-0 w-52">
+	<input class="group peer toggle hidden" type="checkbox" name="cheap" id="cheap">
+	<label for="cheap" class="peer-checked:bg-purple-600 w-20 h-10 inline-block rounded-full bg-gray-500 cursor-pointer mt-4 relative">
+        <div id="cheab ball" class="animate-slide-off bg-white w-[34px] h-[34px] rounded-full items-center justify-center absolute top-[3px] left-[3px]"></div>
+    </label>
+    <span class="mt-5  mx-5">Cheap</span>
+</div>
+
+<div id="toggle-container" class="flex items-center mx-3 my-0 w-52">
+	<input class="group peer toggle hidden" type="checkbox" name="fast" id="fast">
+	<label for="fast" class="peer-checked:bg-purple-600 w-20 h-10 inline-block rounded-full bg-gray-500 cursor-pointer mt-4 relative">
+        <div id="fast ball" class="animate-slide-off bg-white w-[34px] h-[34px] rounded-full items-center justify-center absolute top-[3px] left-[3px]"></div>
+    </label>
+    <span class="mt-5  mx-5">Fast</span>
+</div>
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'checkboxes/js/checkboxController.js' %}"></script>
+{% endblock %}	

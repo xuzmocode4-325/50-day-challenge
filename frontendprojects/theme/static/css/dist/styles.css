@@ -1101,6 +1101,10 @@ div#slide-bg::before {
   left: -10vw;
 }
 
+.left-\[3px\] {
+  left: 3px;
+}
+
 .left-\[40\%\] {
   left: 40%;
 }
@@ -1179,6 +1183,10 @@ div#slide-bg::before {
 
 .top-\[35\%\] {
   top: 35%;
+}
+
+.top-\[3px\] {
+  top: 3px;
 }
 
 .top-\[5\%\] {
@@ -1270,9 +1278,19 @@ div#slide-bg::before {
   margin-right: 11rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .my-1 {
@@ -1401,6 +1419,10 @@ div#slide-bg::before {
   margin-top: 7rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -1431,6 +1453,10 @@ div#slide-bg::before {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-0\.5 {
@@ -1515,6 +1541,10 @@ div#slide-bg::before {
 
 .h-\[300px\] {
   height: 300px;
+}
+
+.h-\[34px\] {
+  height: 34px;
 }
 
 .h-\[35\%\] {
@@ -1625,6 +1655,10 @@ div#slide-bg::before {
   width: 1.25rem;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
 .w-56 {
   width: 14rem;
 }
@@ -1663,6 +1697,10 @@ div#slide-bg::before {
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[34px\] {
+  width: 34px;
 }
 
 .w-\[70vw\] {
@@ -1833,6 +1871,42 @@ div#slide-bg::before {
 .rotate-\[90deg\] {
   --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes slide-off {
+  0% {
+    transform: translateX(40px) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.animate-slide-off {
+  animation: slide-off 0.3s linear forwards;
+}
+
+@keyframes slide-on {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+
+  100% {
+    transform: translateX(40px) scale(1);
+  }
+}
+
+.animate-slide-on {
+  animation: slide-on 0.3s linear forwards;
 }
 
 .cursor-pointer {
@@ -2433,10 +2507,6 @@ div#slide-bg::before {
   font-family: Lato, sans-serif;
 }
 
-.font-matemasie {
-  font-family: Matemasie, sans-serif;
-}
-
 .font-mulish {
   font-family: Mulish, sans-serif;
 }
@@ -2465,6 +2535,11 @@ div#slide-bg::before {
   line-height: 1;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2478,11 +2553,6 @@ div#slide-bg::before {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -3055,6 +3125,24 @@ div#slide-bg::before {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
+@keyframes slide-on {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+
+  100% {
+    transform: translateX(40px) scale(1);
+  }
+}
+
+.group:checked .group-checked\:animate-slide-on {
+  animation: slide-on 0.3s linear forwards;
+}
+
 .group:hover .group-hover\:bg-black\/60 {
   background-color: rgb(0 0 0 / 0.6);
 }
@@ -3128,6 +3216,29 @@ div#slide-bg::before {
   opacity: 1;
 }
 
+@keyframes slide-on {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+
+  100% {
+    transform: translateX(40px) scale(1);
+  }
+}
+
+.peer:checked ~ .peer-checked\:animate-slide-on {
+  animation: slide-on 0.3s linear forwards;
+}
+
+.peer:checked ~ .peer-checked\:bg-purple-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+}
+
 .peer:hover ~ .peer-hover\:left-3\/4 {
   left: 75%;
 }
@@ -3147,6 +3258,24 @@ div#slide-bg::before {
 
 .has-\[\.activated\]\:opacity-100:has(.activated) {
   opacity: 1;
+}
+
+@keyframes slide-on {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+
+  100% {
+    transform: translateX(40px) scale(1);
+  }
+}
+
+.group[aria-checked="true"] .group-aria-checked\:animate-slide-on {
+  animation: slide-on 0.3s linear forwards;
 }
 
 @media (min-width: 640px) {

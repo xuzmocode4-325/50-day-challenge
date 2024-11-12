@@ -51,5 +51,6 @@ urlpatterns = [
     path('toast/', include('toast.urls')),
     path('timer/', include('timer.urls')),
     path('autotext/', include('autotext.urls')),
+    path('checkboxes/', include('checkboxes.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

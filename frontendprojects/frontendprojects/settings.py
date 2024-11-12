@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'keycodes',
     'waveform',
     'stickynav',
+    'checkboxes',
     'placeholder',
     'drinkwater',
     'blureffect',
