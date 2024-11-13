@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-gray-950{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %} {% endblock %}
+
+{% block content%}
+    <div id="container" class="flex flex-col gap-1 md:gap-2 p-4"></div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'hoverboard/js/hoverboardController.js' %}"></script>
+{% endblock %}	
