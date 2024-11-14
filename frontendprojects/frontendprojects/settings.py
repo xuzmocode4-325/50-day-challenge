@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'tailwind',
     'drawing',
     'kinetic',
+    'verifyer',
     'hoverboard',
     'slideshow',
     'keycodes',
