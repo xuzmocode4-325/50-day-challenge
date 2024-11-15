@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-red-200{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="panel" class="bg-gray-200 text-center flex rounded-xl
+        flex-col justify-center items-center w-96 p-8 shadow-xl">
+        <strong>How satisfied are you with<br> our customer support services?</strong>
+        <div id="ratings-container" class="flex flex-row my-8 gap-6">
+            <div class="py-2 px-1 cursor-pointer transition-all duration-500 rating hover:scale-125 
+                    w-16 border-2 rounded-md hover:border-red-300 hover:shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/187/187150.png" alt="">
+                <small>Unhappy</small>
+                </div>
+            <div class="py-2 px-1 cursor-pointer transition-all duration-500 rating hover:scale-125 
+                    w-16 rounded-md border-2 hover:border-red-300 hover:shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/187/187136.png" alt=""/>
+                <small>Neutral</small>
+            </div>
+            <div class="py-2 px-1 cursor-pointer transition-all duration-500 rating hover:scale-125 
+                    w-16 rounded-md border-2 hover:border-red-300 hover:shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/187/187133.png" alt=""/>
+                <small>Satisfied</small>
+            </div>
+        </div>
+        <button id="send" class="active:scale-90 transition-all duration-[50ms] border hover:bg-gray-300 border-white shadow-md p-3 rounded-lg text-gray-950">
+            Submit
+        </button>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'feedback/js/feedbackController.js' %}"></script>
+{% endblock %}	

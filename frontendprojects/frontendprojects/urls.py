@@ -54,5 +54,6 @@ urlpatterns = [
     path('checkboxes/', include('checkboxes.urls')),
     path('hoverboard/', include('hoverboard.urls')),
     path('verifyer/', include('verifyer.urls')),
+    path('feedback/', include('feedback.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

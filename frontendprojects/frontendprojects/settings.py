@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'drawing',
     'kinetic',
     'verifyer',
+    'feedback',
     'hoverboard',
     'slideshow',
     'keycodes',
