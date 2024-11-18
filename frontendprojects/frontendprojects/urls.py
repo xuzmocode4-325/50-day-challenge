@@ -55,5 +55,6 @@ urlpatterns = [
     path('hoverboard/', include('hoverboard.urls')),
     path('verifyer/', include('verifyer.urls')),
     path('feedback/', include('feedback.urls')),
+    path('quiz/', include('quiz.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
