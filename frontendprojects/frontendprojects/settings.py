@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'kinetic',
     'verifyer',
     'feedback',
+    'testimonials',
     'hoverboard',
     'slideshow',
     'keycodes',

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-emerald-200{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="testimonial-container" class="
+        container bg-blue-600 rounded-md my-5 mx-auto py-10 px-20 max-w-md">
+        <div id="progress-bar" class="h-1 w-full bg-white mb-5 origin-left animate-expand"></div>
+        <p class="text-justify text-white">
+            <span class="fas fa-quote-left fa-quote text-2xl"></span>
+            <br>
+            <span id="testimonial">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eum reiciendis a omnis quae nostrum eaque, tempore incidunt, 
+                reprehenderit sunt autem tempora. Unde quis vel neque quas, 
+                inventore qui adipisci quae placeat quo repellat ipsum quam labore laborum saepe accusamus itaque soluta nesciunt modi minus. 
+                Est ullam magnam inventore voluptate vero. 
+            </span>
+            <br>
+            <span class="fas fa-quote-right fa-quote text-2xl"></span>
+        </p>
+        <div id="user" class="flex items-center justify-center">
+            <img id='user-image' src="https://randomuser.me/api/portraits/women/80.jpg" alt="user"
+            class="rounded-full">
+            <div id="user-details" class="ml-4 transition-all duration-500">
+                <h4 id="user-name" class="text-emerald-200">Mia Price</h4>
+                <p id="user-role" class="text-white"> Designer</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'testimonials/js/testimonialsController.js'%}"></script>
+{% endblock %}	

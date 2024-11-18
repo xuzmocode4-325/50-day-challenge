@@ -79,11 +79,17 @@ module.exports = {
                     '100%': {
                         transform: 'translateX(0px) scale(1)'
                     }
+                },
+                'expand': {
+                    '0%' : {
+                        transform: 'scaleX(0)'
+                    },
                 }
             },
             animation: {
                 'slide-on': 'slide-on 0.3s linear forwards',
                 'slide-off': 'slide-off 0.3s linear forwards',
+                'expand': 'expand 10s linear infinite',
             }
         },
         fontFamily: {
