@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-orange-200{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="phone" class="relative overflow-hidden border-4 border-gray-200 rounded-2xl h-[720px] w-96 shadow-2xl">
+        <img class="content transition-all duration-300 ease-out absolute opacity-100 object-cover w-full h-[calc(100%-60px)]" src="https://picsum.photos/id/6/400/900" alt="home">
+        <img class="content transition-all duration-300 ease-out absolute opacity-0 object-cover w-full h-[calc(100%-60px)]" src="https://picsum.photos/id/22/400/900" alt="work">
+        <img class="content transition-all duration-300 ease-out absolute opacity-0 object-cover w-full h-[calc(100%-60px)]" src="https://picsum.photos/id/24/400/900" alt="blog">
+        <img class="content transition-all duration-300 ease-out absolute opacity-0 object-cover w-full h-[calc(100%-60px)]" src="https://picsum.photos/id/2/400/900" alt="about">
+        <nav class="absolute bottom-0 w-full -mt-5 h-[60px] p-4 bg-white">
+            <ul class="bg-white flex items-center justify-center gap-12 text-md font-lato text-gray-600">
+                <li class="flex flex-col items-center link text-purple-700">
+                    <i class="fas fa-home "></i>
+                    <span class="text-center">Home</span>
+                </li>
+                <li class="flex flex-col items-center link">
+                    <i class="fas fa-box"></i>
+                    <span class="text-center">Work</span>
+                </li>
+                <li class="flex flex-col items-center link">
+                    <i class="fas fa-book-open"></i>
+                    <span class="text-center">Blog</span>
+                </li>
+                <li class="flex flex-col items-center link">
+                    <i class="fas fa-users"></i>
+                    <span class="text-center">About Us</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script scr="{% static 'mobiletab/js/mobileController.js' %}"></script>
+{% endblock %}	

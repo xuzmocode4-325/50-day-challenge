@@ -57,5 +57,7 @@ urlpatterns = [
     path('feedback/', include('feedback.urls')),
     path('quiz/', include('quiz.urls')),
     path('testimonials/', include('testimonials.urls')),
+    path('randomfeed/', include('randomfeed.urls')),
+    path('mobiletab/', include('mobiletab.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
