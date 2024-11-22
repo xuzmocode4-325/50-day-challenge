@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="background" class="background absolute left-0 right-0  top-0 w-screen h-screen bg-center bg-cover flex items-center justify-center -z-10 bg-no-repeat" id="background" style="background: url(https://picsum.photos/seed/picsum/2400/1200); filter: blur(20px);">
+    </div>
+    <div class="bg-white rounded-xl p-10 text-center shadow-md min-w-80 max-w-sm">
+        <h1 class="text-gray-950 mb-2 text-3xl">Sign Up</h1>
+        <small class="text-gray-700 mt-4">Enter Your Details Below</small>
+        <div class="my-4 text-left">
+            <label for="email" class="text-gray-900">Email</label>
+            <input type="text" id="email" class="border block w-full p2 mt-2 rounded">
+        </div>
+        <div class="my-4 text-left">
+            <label for="password" class="text-gray-900">Password</label>
+            <input type="password" id="password" class="border block w-full p2 mt-2 rounded">
+        </div>
+        <div class="bg-black">
+            <button class="text-white bg-gray-950 py-2 mt-4 inline-block w-full rounded" id="submit">Submit</button>
+        </div>
+        <div class="mt-4">
+            <small>Already have an account?</small>
+            <p class="font-bold">Log In</p>
+        </div>
+        <!-- <div class="mt-5">
+            <p class="text-gray-300 text-left">contains atleast one number</p>
+            <p class="text-gray-300 text-left">contains atlease one lowercase character</p>
+            <p class="text-gray-300 text-left">contains atlease one uppercase character</p>
+            <p class="text-gray-300 text-left">contains atleast one special chachacter</p>
+            <p class="text-gray-300 text-left">atleast 12 characters or longer</p>
+        </div> -->
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'password/js/passwordController.js' %}"></script>
+{% endblock %}	

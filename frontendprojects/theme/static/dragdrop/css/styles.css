@@ -1,0 +1,12 @@
+
+
+.hold {
+	border: solid 4px #333
+}
+
+.hovered {
+    background-color: #6b7280;
+    border: solid 5px white;
+    border-color: #030712;
+    border-style: dashed;
+}

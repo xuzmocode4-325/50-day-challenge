@@ -1,0 +1,9 @@
+.digit {
+    -moz-appearance: textfield;
+}
+
+.digit::-webkit-outer-spin-button,
+.digit::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
