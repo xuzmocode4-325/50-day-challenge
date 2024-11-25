@@ -84,12 +84,26 @@ module.exports = {
                     '0%' : {
                         transform: 'scaleX(0)'
                     },
+                },
+                'fade': {
+                    '0%': {
+                        transform: 'scale(0)',
+                        opacity: '0'
+                    },
+                    '10%':{
+                        opacity: '1'
+                    },
+                    '100%': {
+                        transform: 'scale(4)',
+                        opacity: '0'
+                    }
                 }
             },
             animation: {
                 'slide-on': 'slide-on 0.3s linear forwards',
                 'slide-off': 'slide-off 0.3s linear forwards',
                 'expand': 'expand 10s linear infinite',
+                'fade': 'fade 1s ease-out'
             }
         },
         fontFamily: {

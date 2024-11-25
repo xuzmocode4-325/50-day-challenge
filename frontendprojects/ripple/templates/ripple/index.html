@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-[#121212]{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <button id="btn" class="relative bg-green-700 hover:bg-green-900 transition-all duration-500 rounded-full px-20 py-24 text-[#f5fffa] overflow-hidden">
+        Click Me 
+    </button>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'ripple/js/rippleController.js' %}"></script>
+{% endblock %}	

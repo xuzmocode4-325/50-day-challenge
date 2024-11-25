@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'movies',
     'scroll',
     'search',
+    'ripple',
     'pokedex',
     'counter',
     'dragdrop',
