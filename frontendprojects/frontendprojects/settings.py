@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'navigation',
     'stylishnav',
     'randomfeed',
+    'heartclick',
     'randomchoice',
     'split_landing',
     'verticalslider',

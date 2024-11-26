@@ -61,5 +61,6 @@ urlpatterns = [
     path('mobiletab/', include('mobiletab.urls')),
     path('password/', include('password.urls')),
     path('ripple/', include('ripple.urls')),
+    path('heartclick/', include('heartclick.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %} bg-pink-300 {% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<div class="container flex flex-col items-center">
+    <h3>Double Click to Show Some 
+        <i class="fas fa-heart text-pink-700"></i>
+    </h3>
+    <p class="inline-block text-center m-4">You've liked this
+        <span id="times" >0</span> times
+    </p>
+    <div id="img" class="w-96 h-96 rounded-md shadow-xl border-2 border-pink-200 cursor-pointer relative" style="background: url(https://picsum.photos/id/239/384/384);">
+    </div>
+</div>
+    
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'heartclick/js/heartController.js' %}"></script>
+{% endblock %}	
