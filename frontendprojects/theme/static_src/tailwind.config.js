@@ -97,13 +97,65 @@ module.exports = {
                         transform: 'scale(4)',
                         opacity: '0'
                     }
+                }, 
+                'hide': {
+                    '0%': {
+                        transform: 'scale(2)'
+                    },
+                    '100%': {
+                        transform: 'scale(0)',
+                        opacity: '0'
+                    }
+                }, 
+                'show': {
+                    '0%': {
+                        transform: 'scale(0)',
+                        opacity: '0'
+                    }, 
+                    '50%': {
+                        transform: 'scale(4)',
+                        opacity: '0'
+                    }, 
+                    '100%':{
+                        transform: 'scale(1)',
+                        opacity: '1'
+                    }
+                }, 
+                'slide-in': {
+                    '0%':{
+                        transform: 'rotate(120deg)',
+                    },
+                    '30%':{
+                        transform: 'rotate(-20deg)',
+                    },
+                    '60%':{
+                        transform: 'rotate(10deg)',
+                    },
+                    '100%':{
+                        transform: 'rotate(0deg)',
+                    }
+                },
+                'slide-out':{
+                    '0%': {
+                        transform: 'rotate(0deg)'
+                    },
+                    '30%': {
+                        transform: 'rotate(20deg)'
+                    },
+                    '100%': {
+                        transform: 'rotate(-120deg)'
+                    },
                 }
             },
             animation: {
                 'slide-on': 'slide-on 0.3s linear forwards',
                 'slide-off': 'slide-off 0.3s linear forwards',
                 'expand': 'expand 10s linear infinite',
-                'fade': 'fade 1s ease-out'
+                'fade': 'fade 1s ease-out',
+                'hide': 'hide 0.2s ease-out',
+                'show': 'show 0.2s ease-out',
+                'slide-in': 'slide-in 0.5 ease-in-out',
+                'slide-out': 'slide-in 0.5 ease-in-out'
             }
         },
         fontFamily: {

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-lime-100{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<div class="text-center flex flex-col items-center justify-center">
+    <div id="counter" class="text-center animate-show flex justify-center">
+        <div id="nums" class="relative m-5 w-62 overflow-hidden">
+            <span class="text-4xl font-bold origin-bottom text-emerald-700 animate-slide-in">3</span>
+            <span class="hidden text-4xl font-bold origin-bottom animate-pulse text-green-600 ">2</span>
+            <span class="hidden text-4xl font-bold origin-bottom animate-pulse text-lime-500">1</span>
+            <h4 class="text-center text-blue-500 m-4 uppercase">Get Ready</h4>
+        </div>
+    </div>
+    <div id="final" class="animate-show hidden" >
+        <h1 class="text-center text-emerald-700 ">GO!</h1>
+        <button id="replay" class="bg-green-700 text-lime-200 m-4  rounded-md p-2">Restart</button>
+    </div>
+</div>
+   
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'countdown/js/countController.js' %}"></script>
+{% endblock %}	

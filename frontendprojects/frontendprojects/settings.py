@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'feedback',
     'mobiletab',
     'password',
+    'countdown',
     'testimonials',
     'hoverboard',
     'slideshow',
