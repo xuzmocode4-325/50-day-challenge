@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet" href="{% static 'todos/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}bg-teal-200{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<div class="absolute top-0 left-0 right-0 flex flex-col items-center justify-center">
+    <h1 class="text-teal-700 text-[120px] text-center m-6 drop-shadow-md">Todos</h1>
+    <form id="form" class="max-w-full w-96">
+        <input id="input" type="text" autocomplete="off" placeholder="Add a to do list item..."
+        class="w-full bg-teal-800 border-none placeholder:text-gray-300 text-teal-50 py-4
+        text-2xl">
+        <ul id="todos" class="bg-teal-500 text-teal-950 mb-6">
+        </ul>
+        <small class="text-teal-700"> 
+            Left click to toggle completed tasks.
+            <br> Click on a task to delete it. 
+        </small>
+    </form>
+</div>
+  
+    
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'todos/js/todoController.js' %}"></script>
+{% endblock %}	

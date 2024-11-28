@@ -63,5 +63,6 @@ urlpatterns = [
     path('ripple/', include('ripple.urls')),
     path('heartclick/', include('heartclick.urls')),
     path('countdown/', include('countdown.urls')),
+    path('todo/', include('todo.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

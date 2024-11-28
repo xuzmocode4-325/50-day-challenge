@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'autotext',
     'faq',
+    'todo',
     'quiz',
     'timer',
     'clock',
