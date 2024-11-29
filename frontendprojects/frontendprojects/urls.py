@@ -64,5 +64,6 @@ urlpatterns = [
     path('heartclick/', include('heartclick.urls')),
     path('countdown/', include('countdown.urls')),
     path('todo/', include('todo.urls')),
+    path('netnav/', include('netnav.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

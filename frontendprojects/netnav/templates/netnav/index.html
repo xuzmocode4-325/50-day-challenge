@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet" href="{% static 'netnav/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <button id="open-btn" class="cursor-pointer text-2xl fixed top-3 left-3">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="flex flex-col items-center justify-center">
+        <img class="w-48" src="{% static 'netnav/img/eclectica-logo.png' %}" alt="">
+        <p class="mt-3 flex flex-wrap text-center">The home of all things classical art and antiques.</p>
+    </div>
+    <div class="nav nav-red bg-[#7A1316] w-[60%] max-w-96 fixed top-0 left-0 h-screen transition-all duration-500 ease-in">
+        <div class="nav nav-sand bg-[#BA9b76] w-[95%] h-screen transition-all duration-500 ease-in">
+            <div class="nav nav-white  bg-white w-[95%] px-3left-0 h-screen transition-all duration-500 ease-in relative p-12">
+                <button id="close-btn" class="cursor-pointer text-2xl absolute top-3 left-3">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img class="w-48 mt-6 mx-0" src="{% static 'netnav/img/eclectica-logo.png' %}" alt="">
+                <ul class="mt-3 flex flex-col gap-2 text-lg">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li>
+                        <ul class="ml-3 flex flex-col gap-2">
+                            <li><a href="">Paintings</a></li>
+                            <li><a href="">Ornaments</a></li>
+                            <li><a href="">Sculptures</a></li>
+                            <li><a href="">Glasware</a></li>
+                            <li><a href="">Furniture</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'netnav/js/netnavController.js' %}"></script>
+{% endblock %}	
+
+<!-- button.cursor-pointer.fixed.top-3.left-3 -->
+<!-- fixed.top-0.left-0.h-screen.transition-all.duration-300.ease -->

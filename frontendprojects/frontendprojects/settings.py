@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'scroll',
     'search',
     'ripple',
+    'netnav',
     'pokedex',
     'counter',
     'dragdrop',
