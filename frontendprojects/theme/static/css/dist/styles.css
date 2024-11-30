@@ -1225,6 +1225,42 @@ div#slide-bg::before {
   top: 0.75rem;
 }
 
+.-top-4 {
+  top: -1rem;
+}
+
+.-top-3 {
+  top: -0.75rem;
+}
+
+.-top-2 {
+  top: -0.5rem;
+}
+
+.left-28 {
+  left: 7rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.left-32 {
+  left: 8rem;
+}
+
+.left-36 {
+  left: 9rem;
+}
+
+.left-44 {
+  left: 11rem;
+}
+
+.left-40 {
+  left: 10rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1275,6 +1311,10 @@ div#slide-bg::before {
 
 .m-auto {
   margin: auto;
+}
+
+.m-9 {
+  margin: 2.25rem;
 }
 
 .mx-0 {
@@ -1365,6 +1405,11 @@ div#slide-bg::before {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .-mt-4 {
@@ -1477,6 +1522,14 @@ div#slide-bg::before {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .block {
@@ -2583,6 +2636,59 @@ div#slide-bg::before {
 .bg-\[\#BA9b76\] {
   --tw-bg-opacity: 1;
   background-color: rgb(186 155 118 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#34fe67\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 254 103 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#37fe67\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 254 103 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#44fe67\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 254 103 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#444467\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 68 103 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#443367\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 51 103 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#445567\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 85 103 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#442267\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 34 103 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#4422111\] {
+  background-color: #4422111;
+}
+
+.bg-\[\#442211\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 34 17 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#442260\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 34 96 / var(--tw-bg-opacity));
+}
+
+.bg-\[442260\] {
+  background-color: 442260;
 }
 
 .bg-foo {

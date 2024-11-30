@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet" href="{% static 'slider/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}bg-[#442260]{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <h2 class="text-white">Got Range?</h2>
+    <p class="mb-24 text-white">On a scale of 1-100, how much range do you have?</p>
+    <div class="relative bg-[442260]" >
+        <input class="slider w-96 my-9 bg-[442260] rounded-md" type="range" id="range" min="0" max="100">
+        <label class="bg-white absolute -top-2 left-40 text-center w-20 px-2 rounded-md shadow-md" for="range">50</label>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'slider/js/rangeController.js' %}"></script>
+{% endblock %}	 
