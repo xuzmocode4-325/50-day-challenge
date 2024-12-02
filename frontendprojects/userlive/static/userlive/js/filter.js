@@ -41,7 +41,6 @@ async function getData() {
 
 function filterData(query) {
     const lowerQuery = query.toLowerCase()
-   
     listItems.forEach(item => {
         const lowerItem = item.innerText.toLowerCase()
         if (lowerItem.includes(lowerQuery)) {
