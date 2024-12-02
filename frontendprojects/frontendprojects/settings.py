@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'search',
     'ripple',
     'netnav',
+    'userlive',
     'pokedex',
     'counter',
     'dragdrop',

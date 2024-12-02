@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet" href="{% static 'userlive/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div class="container border border-black rounded-md overflow-hidden w-80 max-w-96">
+        <div id="header" class="bg-blue-600 text-white py-4 px-8">
+            <h4 class="m-0">Live User Filter</h4>
+            <small class="inline-block">Search By Name or Location</small>
+            <input type="text" id="filter" class="mt-2 rounded-md bg-black/20 text-white w-full">
+        </div>
+        <ul id="results" class="max-h-96 overflow-auto">
+            <!-- <li class="flex p-4 hover:bg-gray-100 items-center border-b border-[#eee] last-of-type:border-0">
+                <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="user"
+                    class="rounded-full object-cover w-12 h-12">
+                <div id="user-info" class="ml-2">
+                    <h4 class="mr-4">Jason Jonses</h4>
+                    <p>Stokholm, Switzerland</p>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+{% endblock %}
+
+{% block script %}
+ <script src="{% static 'userlive/js/filter.js'%}" ></script>
+{% endblock %}	
+
+<!-- 
+div.container.rounded.shadow.overflow-hidden.w-96 
+	div.header.bg-blue-500.text-white.py-8.px-4
+		h4.m-0
+		small.inline-block.my-2.ml-0.mb-4
+		input#filter-type-text.bg-black/20.border-none.rounded.text-white.p-4.w-fulldiv.container 
+	ul#result 
+		ul#result.max-h-96.overflow-auto
+		li.flex.p-4
+			img.rounded-full.object-cover.w-12.h-12
+				scr=“https:randomuser.me/api/portraits/men/33.jpg"
+			div#user-info.ml-2
+				h4.mb-4 - name
+				p - location
+		li
+			h3 - loading -->
