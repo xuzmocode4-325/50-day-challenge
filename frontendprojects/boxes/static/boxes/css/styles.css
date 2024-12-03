@@ -1,0 +1,45 @@
+#boxes.big {
+    width: 600px;
+    height: 600px;
+}
+
+#boxes.big .box{ 
+    transform: rotateZ(360deg);
+}
+
+.box {
+    background-size: 500px 500px;
+    position: relative;
+    transition: 0.5s ease;
+    background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGRjeGwyMHg5OGZzanFqN29qejE1dTRudjdudDYwZmk2bnNoY3RqNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3V0lsGtTMSB5YNgc/giphy.gif');
+    background-origin: content-b;
+}
+
+.box::after {
+    content: '';
+    background-color: #fde047;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+}
+
+.box::before {
+    content: '';
+    background-color: #eab308;
+    position: absolute;
+    bottom: -15px;
+    left: 8px;
+    height: 15px;
+    width: 100%;
+    transform: skewX(45deg);
+}
+
+@media (max-width: 419px) {
+    #boxes.big {
+        width: 350px;
+        height: 350px;
+    }
+}

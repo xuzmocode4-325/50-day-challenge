@@ -67,5 +67,6 @@ urlpatterns = [
     path('netnav/', include('netnav.urls')),
     path('slider/', include('slider.urls')),
     path('userlive/', include('userlive.urls')),
+    path('boxes/', include('boxes.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

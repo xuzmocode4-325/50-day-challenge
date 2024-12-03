@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'faq',
     'todo',
     'quiz',
+    'boxes',
     'timer',
     'clock',
     'jokes',

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+ <link rel="stylesheet" href="{% static 'boxes/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <button id="btn" class="p-2 rounded-md bg-yellow-500 text-white fixed top-4 w-32 left-1/2 -translate-x-1/2
+        active:-translate-y-1 transition-all duration-100 ease-in">Magic 🎩 
+    </button>
+    <div id="boxes" class="transition duration-500 flex relative flex-wrap justify-around w-[320px] h-[320px] sm:w-[512px] sm:h-[512px]">
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'boxes/js/boxController.js' %}"></script>
+{% endblock %}	
+
+
+
