@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-blue-400{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="pad" class="absolute top-0 left-0 flex flex-row mt-8 flex-wrap justify-center">
+        <button id="add" class="
+            fixed top-4 left-4 rounded-md bg-lime-500 text-white py-2 px-4
+            cursor-pointer ">
+            <i class="fas fas-plus"></i>
+            Add Note
+        <button>
+    </div>
+ 
+    
+{% endblock %}
+
+{% block script %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.3/marked.min.js" integrity="sha512-7aRjMGJX+VgTMGWgWLpQxavdTKRc2LwCTAS4LmB7OLwGTpH84ehHQoAY/y1fUfprr2yMFC6toDLHpbGaDth9VQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'notes/js/notes.js' %}"></script>
+{% endblock %}	
+<!-- 
+<div class="note bg-white w-80 h-80 sm:w-96 sm:h-96 shadow-md shadow-black/10 my-8 mx-4 rounded-lg">
+</div> -->
+
+<!-- <div class="tools bg-lime-500 text-white flex justify-end gap-4 p-1 rounded-t-lg">
+    <button class="edit">
+        <i class="fas fa-edit"></i>
+    </button>
+    <button class="delete">
+        <i class="fas fa-trash-alt"></i>
+    </button>
+</div>
+<div class="main"></div>
+<textarea name="" id="" class="outline-none w-full h-[calc(100%)] p-4 rounded-b-lg"></textarea> -->
