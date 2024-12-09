@@ -69,5 +69,6 @@ urlpatterns = [
     path('userlive/', include('userlive.urls')),
     path('boxes/', include('boxes.urls')),
     path('notes/', include('notes.urls')),
+    path('insects/', include('insects.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]

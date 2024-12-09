@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+    <link rel="stylesheet" href="{% static 'insects/css/styles.css' %}">
+{% endblock %}
+
+{% block custom_body_styles %}press-start-2p bg-blue-500 text-white overflow-hidden{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+    <div id="start-screen" class="flex flex-col items-center justify-center h-screen w-screen screen text-center">
+        <h1 class="mb-10">Catch Some Insects! </h1>
+        <div class="flex mb-10 gap-8">
+            <p class="text-5xl">🪰</p>
+            <p class="text-5xl">🦟</p>
+            <p class="text-5xl">🕷️</p>
+            <p class="text-5xl">🪳</p>
+        </div>
+        <h3 class="mt-5 animate-bounce">Are You Ready?</h3>
+        <button id="start" class="bg-white text-blue-500 py-4 px-5 mt-10">Start</button>
+    </div>
+    <div id="menu-screen" class="flex flex-col items-center justify-center h-screen w-screen screen text-center">
+        <h1>What Is Your "Favorite" Insect?</h1>
+        <ul id="insects" class="flex justify-center gap-4 mt-10 flex-wrap">
+            <li>
+                <button id="fly" class="bug-selector-btn flex flex-col justify-evenly items-center w-40 h-40 
+                    bg-white/20 hover:bg-white/50 cursor-pointer text-blue-500 p-4">
+                    <p class="text-md">Fly</p>
+                    <img class="w-24 h-24 object-contain" src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+                </button>
+            </li>
+            <li>
+                <button id="spider" class="bug-selector-btn flex flex-col justify-evenly items-center w-40 h-40 
+                    bg-white/20 hover:bg-white/50 cursor-pointer text-blue-500 p-4">
+                    <p class="text-md">Spider</p>
+                    <img class="w-24 h-24 object-contain" src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="spider">
+                </button>
+            </li>
+            <li>
+                <button id="mosquito" class="bug-selector-btn flex flex-col justify-evenly items-center w-40 h-40 
+                    bg-white/20 hover:bg-white/50 cursor-pointer text-blue-500 p-4">
+                    <p class="text-md">Mosquito</p>
+                    <img class="w-24 h-24 object-contain" src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="mosquito">
+                </button>
+            </li>
+            <li>
+                <button id="roach" class="bug-selector-btn flex flex-col justify-evenly items-center w-40 h-40 
+                    bg-white/20 hover:bg-white/50 text-blue-500 p-4">
+                    <p class="text-md">Roach</p>
+                    <img class="w-24 h-24 object-contain" src="http://pngimg.com/uploads/roach/roach_PNG12163.png" alt="roach">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div id="game-screen" class="relative flex flex-col items-center justify-center h-screen w-screen screen text-center gap-8 ">
+        <h5 id="time" class="absolute top-5 left-5 ">Time 00:00</h5>
+        <h5 id="score" class="absolute top-5 right-5">Score: 0</h5>
+        <h6 id="message" class="bg-black/50 p-10 w-full z-50 transition-all duration-500 ease-in hidden">Are you annoyed yet? You are playing an impossible game!!</h6>
+    </div>
+   
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'insects/js/insects.js' %}"></script>
+{% endblock %}	

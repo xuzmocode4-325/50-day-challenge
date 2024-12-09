@@ -163,7 +163,7 @@ module.exports = {
             mulish: ['Mulish', 'sans-serif'],
             lato: ['Lato', 'sans-serif'],
             ubuntu: ['Ubuntu', 'sans-serif'],
-            matemasie: ['Matemasie', 'sans-serif']
+            matemasie: ['Matemasie', 'sans-serif'],
         },
     },
     plugins: [
