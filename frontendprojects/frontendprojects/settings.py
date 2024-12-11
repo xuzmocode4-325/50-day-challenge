@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'tailwind',
     'drawing',
     'kinetic',
+    'passgen',
     'verifyer',
     'feedback',
     'mobiletab',

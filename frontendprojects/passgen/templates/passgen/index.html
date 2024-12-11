@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-fuchsia-700{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<div class="bg-fuchsia-950 text-white py-4 px-4 w-80">
+    <h3 class="text-center">Password Generator</h3>
+    <div id="results-div" class="bg-black/30 p-1.5 my-4 relative flex justify-start w-full h-16">
+        <span id="results" class="break-words flex items-center max-w[calc(100%-40px)]">
+            
+        </span>
+        <button id="clipboard" class="bg-fuchsia-900 cursor-pointer p-4 absolute top-1 right-1">
+            <i class="far fa-clipboard text-xl"></i>
+        </button>
+    </div>
+    <div class="flex flex-col gap-4" id="settings">
+        <div class="setting flex justify-between">
+            <label for="length" id="">Password Length</label>
+            <input class="w-16 h-9 text-black focus:outline-none focus-within:outline-none" 
+                   type="number" 
+                   id="length" 
+                   min="8" 
+                   max="20"
+                   value="8">
+        </div>
+        <div class="setting flex justify-between">
+            <label for="uppercase" id="">Include Uppercase Letters</label>
+            <input type="checkbox" id="uppercase" checked>
+        </div>
+        <div class="setting flex justify-between">
+            <label for="lowercase" id="">Include Uppercase Letters</label>
+            <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div class="setting flex justify-between">
+            <label for="numbers" id="">Include Numbers</label>
+            <input type="checkbox" id="numbers" checked>
+        </div>
+        <div class="setting flex justify-between">
+            <label for="symbols" id="">Include Symbols</label>
+            <input type="checkbox" id="symbols" checked>
+        </div>
+    </div>
+    <button id="generate" class="bg-fuchsia-900 cursor-pointer p-4 mt-6 w-full">Generate Password</button>
+</div>
+{% endblock %}
+
+{% block script %}
+ <script src="{% static 'passgen/js/passgen.js' %}"></script>
+{% endblock %}	 
+		
