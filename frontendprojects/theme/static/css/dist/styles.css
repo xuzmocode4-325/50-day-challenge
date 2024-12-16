@@ -1305,6 +1305,10 @@ div#slide-bg::before {
   margin: auto;
 }
 
+.m-12 {
+  margin: 3rem;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -1528,6 +1532,10 @@ div#slide-bg::before {
   margin-top: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1706,6 +1714,10 @@ div#slide-bg::before {
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-36 {
+  height: 9rem;
 }
 
 .max-h-96 {
@@ -1888,6 +1900,10 @@ div#slide-bg::before {
   width: 100vw;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .min-w-52 {
   min-width: 13rem;
 }
@@ -1928,8 +1944,20 @@ div#slide-bg::before {
   max-width: 24rem;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
 }
 
 .origin-bottom {
@@ -2395,6 +2423,11 @@ div#slide-bg::before {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-cyan-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 211 238 / var(--tw-border-opacity));
+}
+
 .bg-\[\#121212\] {
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
@@ -2738,6 +2771,21 @@ div#slide-bg::before {
 .bg-fuchsia-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(162 28 175 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#0e7490\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 116 144 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 94 117 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 182 212 / var(--tw-bg-opacity));
 }
 
 .bg-foo {
@@ -3229,6 +3277,26 @@ div#slide-bg::before {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-cyan-300 {
+  --tw-text-opacity: 1;
+  color: rgb(103 232 249 / var(--tw-text-opacity));
+}
+
+.text-cyan-950 {
+  --tw-text-opacity: 1;
+  color: rgb(8 51 68 / var(--tw-text-opacity));
+}
+
+.placeholder-gray-400::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -3472,6 +3540,16 @@ div#slide-bg::before {
 .placeholder\:text-gray-300::placeholder {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-400::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-400::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .before\:absolute::before {

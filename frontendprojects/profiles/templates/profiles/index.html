@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+{% endblock %}
+
+{% block custom_body_styles %}bg-cyan-800 text-white{% endblock %} 
+
+{% block custom_section_styles %}{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block content%}
+<form id="form" action="" class="w-full min-w-80 max-w-2xl">
+    <input  placeholder="Search GitHub profiles here..." 
+        type="text" id="search" 
+        class="rounded-md bg-black/40 w-full p-4 mx-3 placeholder:text-gray-400">
+</form>
+<div id="main">
+    
+</div>
+{% endblock %}
+
+{% block script %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'profiles/js/profiles.js' %}"></script>
+{% endblock %}	
+
+<!-- bg-[#0e7490] text-white
+
+form#form.w-full.max-w-md
+	input#search[text].w-full.bg-black/50.rounded.text-white.p-4.mb-8.placeholder-gray-400 -->
+
+
+<!-- 
+div#main
+	div.card.bg-black-500.rounded.flex.p-12.mx-3
+		div
+			img.avatar.border-2.w-72-h-72
+		div.user-info.ml-4
+			h4 = username.mt-0
+			p = bio 
+			h4 = username
+			p = bio 
+			ul
+				li = follower count
+				li = following
+				li = repos
+			div#repos
+				a.repos  
+-->

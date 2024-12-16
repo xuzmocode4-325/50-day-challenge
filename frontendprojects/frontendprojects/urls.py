@@ -71,5 +71,6 @@ urlpatterns = [
     path('notes/', include('notes.urls')),
     path('insects/', include('insects.urls')),
     path('passgen/', include('passgen.urls')),
+    path('profiles/', include('profiles.urls')),
     path('', views.IndexView.as_view(), name='home')
 ]
